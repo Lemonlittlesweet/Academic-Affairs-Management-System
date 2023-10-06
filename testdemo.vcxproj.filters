@@ -43,14 +43,23 @@
     <ClCompile Include="Register.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Register.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="core.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="Register.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="core.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

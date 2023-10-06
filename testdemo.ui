@@ -329,6 +329,14 @@
      <height>23</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionversion_0_0_1"/>
+    <addaction name="actionError_please_contant_admin"/>
+   </widget>
+   <addaction name="menu"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -339,6 +347,16 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionversion_0_0_1">
+   <property name="text">
+    <string>version:0.0.1</string>
+   </property>
+  </action>
+  <action name="actionError_please_contant_admin">
+   <property name="text">
+    <string>Error please contant admin</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <tabstops>

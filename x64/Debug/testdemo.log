@@ -1,2 +1,7 @@
-﻿  Register.cpp
+﻿  moc core.h
+  Register.cpp
+  core.cpp
+  testdemo.cpp
+  moc_Register.cpp
+  moc_core.cpp
   testdemo.vcxproj -> D:\Qt\dsprogress\testdemo\x64\Debug\testdemo.exe

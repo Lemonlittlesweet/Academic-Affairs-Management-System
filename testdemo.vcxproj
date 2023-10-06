@@ -55,6 +55,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <IncludePath>D:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCharts;D:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
   </PropertyGroup>
@@ -89,15 +90,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <QtRcc Include="testdemo.qrc" />
+    <QtUic Include="core.ui" />
     <QtUic Include="Register.ui" />
     <QtUic Include="testdemo.ui" />
     <QtMoc Include="testdemo.h" />
+    <ClCompile Include="core.cpp" />
     <ClCompile Include="Register.cpp" />
     <ClCompile Include="testdemo.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Register.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="core.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

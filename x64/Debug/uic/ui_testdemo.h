@@ -10,6 +10,7 @@
 #define UI_TESTDEMO_H
 
 #include <QtCore/QVariant>
+#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QFormLayout>
 #include <QtWidgets/QFrame>
@@ -17,6 +18,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
@@ -29,6 +31,8 @@ QT_BEGIN_NAMESPACE
 class Ui_testdemoClass
 {
 public:
+    QAction *actionversion_0_0_1;
+    QAction *actionError_please_contant_admin;
     QWidget *centralWidget;
     QGridLayout *gridLayout_2;
     QSpacerItem *verticalSpacer_7;
@@ -56,6 +60,7 @@ public:
     QSpacerItem *horizontalSpacer_6;
     QSpacerItem *verticalSpacer_6;
     QMenuBar *menuBar;
+    QMenu *menu;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
@@ -64,6 +69,10 @@ public:
         if (testdemoClass->objectName().isEmpty())
             testdemoClass->setObjectName(QString::fromUtf8("testdemoClass"));
         testdemoClass->resize(805, 488);
+        actionversion_0_0_1 = new QAction(testdemoClass);
+        actionversion_0_0_1->setObjectName(QString::fromUtf8("actionversion_0_0_1"));
+        actionError_please_contant_admin = new QAction(testdemoClass);
+        actionError_please_contant_admin->setObjectName(QString::fromUtf8("actionError_please_contant_admin"));
         centralWidget = new QWidget(testdemoClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         gridLayout_2 = new QGridLayout(centralWidget);
@@ -211,6 +220,8 @@ public:
         menuBar = new QMenuBar(testdemoClass);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 805, 23));
+        menu = new QMenu(menuBar);
+        menu->setObjectName(QString::fromUtf8("menu"));
         testdemoClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(testdemoClass);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -222,6 +233,10 @@ public:
         QWidget::setTabOrder(pw, loginin);
         QWidget::setTabOrder(loginin, registe);
 
+        menuBar->addAction(menu->menuAction());
+        menu->addAction(actionversion_0_0_1);
+        menu->addAction(actionError_please_contant_admin);
+
         retranslateUi(testdemoClass);
         QObject::connect(loginin, SIGNAL(clicked()), testdemoClass, SLOT(PushLoginClicked()));
         QObject::connect(registe, SIGNAL(clicked()), testdemoClass, SLOT(PushRegisterClicked()));
@@ -232,12 +247,15 @@ public:
     void retranslateUi(QMainWindow *testdemoClass)
     {
         testdemoClass->setWindowTitle(QCoreApplication::translate("testdemoClass", "testdemo", nullptr));
+        actionversion_0_0_1->setText(QCoreApplication::translate("testdemoClass", "version:0.0.1", nullptr));
+        actionError_please_contant_admin->setText(QCoreApplication::translate("testdemoClass", "Error please contant admin", nullptr));
         label->setText(QCoreApplication::translate("testdemoClass", "\350\264\246\345\217\267", nullptr));
         label_2->setText(QCoreApplication::translate("testdemoClass", "\345\257\206\347\240\201", nullptr));
         registe->setText(QCoreApplication::translate("testdemoClass", "\346\263\250\345\206\214", nullptr));
         loginin->setText(QCoreApplication::translate("testdemoClass", "\347\231\273\345\275\225", nullptr));
         label_3->setText(QCoreApplication::translate("testdemoClass", "\346\225\231\345\255\246\347\256\241\347\220\206\347\263\273\347\273\237", nullptr));
         label_4->setText(QString());
+        menu->setTitle(QCoreApplication::translate("testdemoClass", "\345\270\256\345\212\251", nullptr));
     } // retranslateUi
 
 };
