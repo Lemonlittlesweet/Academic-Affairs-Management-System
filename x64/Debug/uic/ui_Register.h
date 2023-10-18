@@ -40,15 +40,15 @@ public:
     QFormLayout *formLayout;
     QLabel *label_2;
     QLineEdit *user;
-    QLabel *label_4;
-    QLineEdit *name;
-    QLabel *label_5;
-    QLineEdit *password;
     QLabel *label_3;
+    QLineEdit *name;
+    QLabel *label_4;
+    QLineEdit *password;
+    QLabel *label_5;
     QLineEdit *repw;
     QFormLayout *formLayout_2;
     QLabel *label_6;
-    QLineEdit *phone;
+    QLineEdit *grade;
     QLabel *label_7;
     QLineEdit *mail;
     QSpacerItem *verticalSpacer_3;
@@ -116,20 +116,20 @@ public:
 
         formLayout->setWidget(0, QFormLayout::FieldRole, user);
 
-        label_4 = new QLabel(frame);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_3 = new QLabel(frame);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
 
-        formLayout->setWidget(1, QFormLayout::LabelRole, label_4);
+        formLayout->setWidget(1, QFormLayout::LabelRole, label_3);
 
         name = new QLineEdit(frame);
         name->setObjectName(QString::fromUtf8("name"));
 
         formLayout->setWidget(1, QFormLayout::FieldRole, name);
 
-        label_5 = new QLabel(frame);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_4 = new QLabel(frame);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
 
-        formLayout->setWidget(2, QFormLayout::LabelRole, label_5);
+        formLayout->setWidget(2, QFormLayout::LabelRole, label_4);
 
         password = new QLineEdit(frame);
         password->setObjectName(QString::fromUtf8("password"));
@@ -137,10 +137,10 @@ public:
 
         formLayout->setWidget(2, QFormLayout::FieldRole, password);
 
-        label_3 = new QLabel(frame);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_5 = new QLabel(frame);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
 
-        formLayout->setWidget(3, QFormLayout::LabelRole, label_3);
+        formLayout->setWidget(3, QFormLayout::LabelRole, label_5);
 
         repw = new QLineEdit(frame);
         repw->setObjectName(QString::fromUtf8("repw"));
@@ -160,10 +160,10 @@ public:
 
         formLayout_2->setWidget(0, QFormLayout::LabelRole, label_6);
 
-        phone = new QLineEdit(frame);
-        phone->setObjectName(QString::fromUtf8("phone"));
+        grade = new QLineEdit(frame);
+        grade->setObjectName(QString::fromUtf8("grade"));
 
-        formLayout_2->setWidget(0, QFormLayout::FieldRole, phone);
+        formLayout_2->setWidget(0, QFormLayout::FieldRole, grade);
 
         label_7 = new QLabel(frame);
         label_7->setObjectName(QString::fromUtf8("label_7"));
@@ -225,10 +225,10 @@ public:
     {
         RegisterClass->setWindowTitle(QCoreApplication::translate("RegisterClass", "Register", nullptr));
         label_2->setText(QCoreApplication::translate("RegisterClass", "\350\264\246\345\217\267", nullptr));
-        label_4->setText(QCoreApplication::translate("RegisterClass", "\345\247\223\345\220\215", nullptr));
-        label_5->setText(QCoreApplication::translate("RegisterClass", "\345\257\206\347\240\201", nullptr));
-        label_3->setText(QCoreApplication::translate("RegisterClass", "\351\207\215\345\244\215\345\257\206\347\240\201", nullptr));
-        label_6->setText(QCoreApplication::translate("RegisterClass", "\346\211\213\346\234\272", nullptr));
+        label_3->setText(QCoreApplication::translate("RegisterClass", "\345\247\223\345\220\215", nullptr));
+        label_4->setText(QCoreApplication::translate("RegisterClass", "\345\257\206\347\240\201", nullptr));
+        label_5->setText(QCoreApplication::translate("RegisterClass", "\351\207\215\345\244\215\345\257\206\347\240\201", nullptr));
+        label_6->setText(QCoreApplication::translate("RegisterClass", "\350\257\204\345\210\206", nullptr));
         label_7->setText(QCoreApplication::translate("RegisterClass", "\351\202\256\347\256\261", nullptr));
         pushButton->setText(QCoreApplication::translate("RegisterClass", "\346\263\250\345\206\214", nullptr));
         label->setText(QCoreApplication::translate("RegisterClass", "\346\263\250\345\206\214", nullptr));
