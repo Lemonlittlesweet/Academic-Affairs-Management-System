@@ -14,51 +14,7 @@
 using namespace std;
 
 List list;
-//安排教师授课
-void List::teacher_c()
-{
-	cout << "请输入教师编号：";
-	char tea_id[20];
-	int temp = 0;
-	cin >> tea_id;
-	for (int i = 0; i < n; i++)
-	{
-		if (!strcmp(tea_id, teacher[i].id))
-		{
-			temp++;
-			cout << "请输入教师课程编号：";
-			char sub_id[20];
-			int temp_ = 0;
-			cin >> sub_id;
-			for (int j = 0; j < s_n; j++)
-			{
-				if (!strcmp(sub_id, subject[j].id))
-				{
 
-
-
-					temp_++;
-					strcpy(t_course[tc_n].teacher_id, tea_id);
-					strcpy(t_course[tc_n].sub_id, tea_id);
-
-
-					tc_n++;
-					cout << "教师教课安排成功！" << endl;
-					return;
-				}
-			}
-			if (temp_ == 0)
-			{
-				cout << "课程编号不存在，安排失败！" << endl;
-				return;
-			}
-		}
-	}
-	if (temp == 0)
-	{
-		cout << "教师不存在，安排失败！" << endl;
-	}
-}
 
 
 //主函数
@@ -83,7 +39,7 @@ int bmain()
 		{
 		case 1:
 		{
-			//int index = list.login_teacher();临时重写int index
+			//int index = list.login_teacher();临时重写int index 此为教师
 			int index;
 			if (index != -1)
 			{
@@ -150,7 +106,7 @@ int bmain()
 		break;
 		case 2:
 		{
-			//int index = list.login_student();临时重写int index
+			//int index = list.login_student();临时重写int index 此为学生
 			int index;
 			if (index != -1)
 			{

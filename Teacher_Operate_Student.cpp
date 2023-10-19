@@ -23,7 +23,7 @@ one:cout << "请输入学号：";
 		if (!strcmp(student[n].id, student[i].id))
 		{
 			cout << "存在该学号，请重新输入！" << endl;
-			goto one;
+			goto one;//return warning
 		}
 	}
 	cout << "请输入姓名：";
@@ -44,11 +44,11 @@ one:cout << "请输入学号：";
 	if (student[n].influence < 1 || student[n].influence>3)
 	{
 		cout << "输入有误，添加失败！" << endl;
-		return;
+		return;//return warning
 	}
 
 	n++;
-	cout << "添加学生信息成功！" << endl;
+	cout << "添加学生信息成功！" << endl;//return 1
 }
 //查询学生信息
 void List::select_student()
@@ -56,9 +56,9 @@ void List::select_student()
 	if (n <= 0)
 	{
 		cout << "没有学生信息，请先录入！" << endl;
-		return;
+		return;//return warning
 	}
-	cout << "1.按学号查询  2.按姓名查询：" << endl;
+	cout << "1.按学号查询  2.按姓名查询：" << endl;//分上下两个做
 	int chioce;
 	cin >> chioce;
 	if (chioce == 1)
@@ -79,12 +79,12 @@ void List::select_student()
 				cout << "  联系电话：" << student[i].phone;
 				cout << "  绩点：" << student[i].grade;
 				cout << "  不良记录严重程度(1.一般 2.严重 3.非常严重)：" << student[i].influence << endl;
-				break;
+				break;//return i
 			}
 		}
 		if (temp == 0)
 		{
-			cout << "查找的学生信息不存在！" << endl;
+			cout << "查找的学生信息不存在！" << endl;//return warning
 		}
 	}
 	else if (chioce == 2)
@@ -105,18 +105,18 @@ void List::select_student()
 				cout << "  联系电话：" << student[i].phone;
 				cout << "  绩点：" << student[i].grade;
 				cout << "  不良记录严重程度(1.一般 2.严重 3.非常严重)：" << student[i].influence << endl;
-				break;
+				break;//return i
 			}
 		}
 		if (temp == 0)
 		{
-			cout << "查找的学生信息不存在！" << endl;
+			cout << "查找的学生信息不存在！" << endl;//return warning
 		}
 	}
-	else
+	/*else
 	{
 		cout << "输入有误！" << endl;
-	}
+	}*/
 }
 //删除学生信息
 void List::delete_student()
@@ -124,7 +124,7 @@ void List::delete_student()
 	if (n <= 0)
 	{
 		cout << "没有学生信息，请先录入！" << endl;
-		return;
+		return;//return warning
 	}
 	cout << "请输入删除的学号：";
 	char id[20];
@@ -147,12 +147,12 @@ void List::delete_student()
 			}
 			n--;
 			cout << "删除学生信息成功！" << endl;
-			break;
+			break;//return i
 		}
 	}
 	if (temp == 0)
 	{
-		cout << "删除的学生信息不存在！" << endl;
+		cout << "删除的学生信息不存在！" << endl;//return warning
 	}
 
 }
@@ -162,7 +162,7 @@ void List::update_student()
 	if (n <= 0)
 	{
 		cout << "没有学生信息，请先录入！" << endl;
-		return;
+		return;//return warning
 	}
 	cout << "请输入修改的学号：";
 	char id[20];
@@ -189,7 +189,7 @@ void List::update_student()
 			cout << "请输入新的联系电话：";
 			cin >> student[i].phone;
 			cout << "修改成功！" << endl;
-			break;
+			break;//同课程
 		}
 	}
 	if (temp == 0)
@@ -198,7 +198,7 @@ void List::update_student()
 	}
 
 }
-//浏览学生信息
+//弃用 浏览学生信息 自行利用查询遍历
 void List::show_student()
 {
 	if (n <= 0)
@@ -217,7 +217,7 @@ void List::show_student()
 		cout << "  不良记录严重程度(1.一般 2.严重 3.非常严重)：" << student[i].influence << endl;
 	}
 }
-
+//排序绑定按钮
 //学生绩点排序
 void List::sort_student_grade()
 {

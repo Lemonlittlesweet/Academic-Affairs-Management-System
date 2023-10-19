@@ -272,7 +272,24 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>RegisterClass</receiver>
+   <slot>PushFinishButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>330</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>601</x>
+     <y>296</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
  <slots>
   <slot>PushFinishButton()</slot>
  </slots>

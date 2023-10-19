@@ -14,7 +14,7 @@ using namespace std;
 int List::regist_teacher(char id [20], char name [20], char pwd [20], float grade)
 {
 	//cout << "请输入教师编号：" << endl;
-	id = teacher[t_n].id;
+	strcpy(teacher[t_n].id , id);
 	for (int i = 0; i < t_n; i++)
 	{
 		if (!strcmp(teacher[t_n].id, teacher[i].id))
@@ -24,11 +24,11 @@ int List::regist_teacher(char id [20], char name [20], char pwd [20], float grad
 		}
 	}
 	//cout << "请输入教师姓名：" << endl;
-	name = teacher[t_n].name;
+	strcpy(teacher[t_n].name, name);
 	//cout << "请输入教师密码：" << endl;
-	pwd = teacher[t_n].pwd;
+	strcpy(teacher[t_n].pwd, pwd);
 	//cout << "请输入教师授课评分：" << endl;
-	grade = teacher[t_n].grade;
+	teacher[t_n].grade = grade;
 	t_n++;
 	//cout << "注册成功！" << endl;
 	return t_n - 1;

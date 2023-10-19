@@ -27,7 +27,7 @@ void List::choose()
 			char sub_id[20];
 			int temp_ = 0;
 			cin >> sub_id;
-			for (int j = 0; j < s_n; j++)
+			for (int j = 0; j < num; j++)
 			{
 				if (!strcmp(sub_id, subject[j].id))
 				{
@@ -36,7 +36,7 @@ void List::choose()
 
 					for (int k = 0; k < num; k++)
 					{
-						if (stu_id, s_course[k].stu_id)
+						if (!strcmp(stu_id, s_course[k].stu_id))
 						{
 							for (int z = 0; z < s_n; z++)
 							{
@@ -45,7 +45,7 @@ void List::choose()
 									if (!strcmp(subject[z].time, subject[j].time))
 									{
 										cout << "选课时间冲突，选课失败！" << endl;
-										return;
+										return;//return warning
 									}
 								}
 							}
@@ -141,7 +141,7 @@ void List::show()
 	}
 
 	for (int i = 0; i < num; i++)
-	{
+	{//和传进来id作比较，if
 		cout << "学号：" << s_course[i].stu_id << "  ";
 		cout << "选课编号：" << s_course[i].sub_id << "  ";
 		cout << "成绩：" << s_course[i].score << endl;
