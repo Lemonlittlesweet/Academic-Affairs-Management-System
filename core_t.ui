@@ -51,7 +51,7 @@
        <bool>true</bool>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>7</number>
       </property>
       <widget class="QWidget" name="tab_7">
        <attribute name="title">
@@ -200,14 +200,210 @@
          <string>查询</string>
         </property>
        </widget>
-       <widget class="QTextBrowser" name="chake">
+       <widget class="QWidget" name="formLayoutWidget_5">
         <property name="geometry">
          <rect>
-          <x>370</x>
-          <y>60</y>
-          <width>256</width>
-          <height>192</height>
+          <x>360</x>
+          <y>80</y>
+          <width>281</width>
+          <height>181</height>
          </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>课程编号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="kechengbianhao">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>课程名称</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="kechengmingchen"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>课程性质</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="kechengxingzhi"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>课程总学时</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>课程学分</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>课程时间</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>选修人数</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="kechengzongxueshi"/>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="kechengxuefen"/>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="kechengshijian"/>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLabel" name="xuanxiurenshu">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>30</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>修改</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>280</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>删除</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>增加课程信息</string>
+       </attribute>
+       <widget class="QWidget" name="formLayoutWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>90</y>
+          <width>251</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout_6">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>课程编号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="zjbh"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>课程名称</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="zjmc"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>课程性质</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="zjxz"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_12">
+           <property name="text">
+            <string>课程总学时</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="zjzxs"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>课程学分</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="zjxf"/>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_14">
+           <property name="text">
+            <string>课程时间</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="zjsj"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>50</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>增加</string>
         </property>
        </widget>
       </widget>
@@ -236,6 +432,51 @@
           <width>256</width>
           <height>192</height>
          </rect>
+        </property>
+       </widget>
+       <widget class="QWidget" name="formLayoutWidget_9">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>50</y>
+          <width>160</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout_9">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_28">
+           <property name="text">
+            <string>教师编号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="jiaoshibianhao"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_29">
+           <property name="text">
+            <string>课程编号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="kechengbianhao_2"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton_9">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>160</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>查询并安排</string>
         </property>
        </widget>
       </widget>
@@ -302,6 +543,340 @@
         </property>
        </widget>
       </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>查询学生信息</string>
+       </attribute>
+       <widget class="QWidget" name="formLayoutWidget_7">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>60</y>
+          <width>271</width>
+          <height>154</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout_7">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_16">
+           <property name="text">
+            <string>学号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_22">
+           <property name="text">
+            <string>出生年月</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_23">
+           <property name="text">
+            <string>姓名</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_24">
+           <property name="text">
+            <string>系别</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_25">
+           <property name="text">
+            <string>联系电话</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_26">
+           <property name="text">
+            <string>绩点</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_27">
+           <property name="text">
+            <string>不良记录严重程度</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="xh">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLabel" name="jd">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLabel" name="bljlyzcd">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="xmxg"/>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="csnyxg"/>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="xbxg"/>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="lxdhxg"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="formLayoutWidget_8">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>120</y>
+          <width>160</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout_8">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="text">
+            <string>学号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_15">
+           <property name="text">
+            <string>姓名</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="xhcx"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="xmcx"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>220</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>学号查询</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>220</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>姓名查询</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_8">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>240</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>修改</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_11">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>240</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>删除</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>增加学生信息</string>
+       </attribute>
+       <widget class="QWidget" name="formLayoutWidget_10">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>70</y>
+          <width>341</width>
+          <height>204</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout_10">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_30">
+           <property name="text">
+            <string>学号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="gaixh"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_32">
+           <property name="text">
+            <string>姓名</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="gaixm"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_33">
+           <property name="text">
+            <string>出生年月</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="gaicsny"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_44">
+           <property name="text">
+            <string>系别</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="gaixb"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_35">
+           <property name="text">
+            <string>联系电话</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="gailxdh"/>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_36">
+           <property name="text">
+            <string>密码</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="gaimm"/>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_31">
+           <property name="text">
+            <string>绩点</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="label_34">
+           <property name="text">
+            <string>不良记录严重程度</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLineEdit" name="gaijd"/>
+         </item>
+         <item row="7" column="1">
+          <widget class="QLineEdit" name="gaibljlyzcd"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton_10">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>300</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>增加</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>学生信息浏览</string>
+       </attribute>
+       <widget class="QTextBrowser" name="stu_info">
+        <property name="geometry">
+         <rect>
+          <x>65</x>
+          <y>20</y>
+          <width>521</width>
+          <height>192</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_12">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>270</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>绩点排序</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_13">
+        <property name="geometry">
+         <rect>
+          <x>334</x>
+          <y>270</y>
+          <width>151</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>不良记录严重程度排序</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </item>
    </layout>
@@ -346,82 +921,18 @@
    </hints>
   </connection>
   <connection>
-   <sender>chaxun_mingchen</sender>
+   <sender>pushButton_4</sender>
    <signal>clicked()</signal>
    <receiver>coretClass</receiver>
-   <slot>mingchen()</slot>
+   <slot>xuehaochaxun()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>266</x>
-     <y>328</y>
+     <x>215</x>
+     <y>338</y>
     </hint>
     <hint type="destinationlabel">
-     <x>218</x>
-     <y>461</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cho_class</sender>
-   <signal>clicked()</signal>
-   <receiver>coretClass</receiver>
-   <slot>choclassPress()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>184</x>
-     <y>290</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>277</x>
-     <y>38</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_5</sender>
-   <signal>clicked()</signal>
-   <receiver>coretClass</receiver>
-   <slot>xuefenpaixu()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>459</x>
-     <y>109</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>519</x>
-     <y>71</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>exit_class</sender>
-   <signal>clicked()</signal>
-   <receiver>coretClass</receiver>
-   <slot>exitclassPress()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>175</x>
-     <y>301</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>205</x>
-     <y>42</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>chaxun_bianhao</sender>
-   <signal>clicked()</signal>
-   <receiver>coretClass</receiver>
-   <slot>bianhao()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>277</x>
-     <y>219</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>279</x>
-     <y>464</y>
+     <x>252</x>
+     <y>34</y>
     </hint>
    </hints>
   </connection>
@@ -442,18 +953,258 @@
    </hints>
   </connection>
   <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>coretClass</receiver>
+   <slot>add()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>459</x>
+     <y>162</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>449</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>coretClass</receiver>
+   <slot>xiugai()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>543</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>509</x>
+     <y>67</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>coretClass</receiver>
+   <slot>addxuesheng()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>297</x>
+     <y>411</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>368</x>
+     <y>460</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chaxun_mingchen</sender>
+   <signal>clicked()</signal>
+   <receiver>coretClass</receiver>
+   <slot>mingchen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>387</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>218</x>
+     <y>461</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exit_class</sender>
+   <signal>clicked()</signal>
+   <receiver>coretClass</receiver>
+   <slot>exitclassPress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>205</x>
+     <y>42</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>coretClass</receiver>
+   <slot>xingmingchaxun()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>338</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>102</x>
+     <y>458</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>coretClass</receiver>
+   <slot>shanchu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>507</x>
+     <y>390</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>507</x>
+     <y>464</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cho_class</sender>
+   <signal>clicked()</signal>
+   <receiver>coretClass</receiver>
+   <slot>choclassPress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>184</x>
+     <y>290</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>277</x>
+     <y>38</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>coretClass</receiver>
+   <slot>xueshengxiugai()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>591</x>
+     <y>358</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>528</x>
+     <y>43</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>coretClass</receiver>
+   <slot>cxap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>112</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>118</x>
+     <y>465</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
    <sender>pushButton_6</sender>
    <signal>clicked()</signal>
    <receiver>coretClass</receiver>
    <slot>laoshishoukepingfenpaixu()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>207</x>
-     <y>134</y>
+     <x>382</x>
+     <y>378</y>
     </hint>
     <hint type="destinationlabel">
      <x>211</x>
      <y>70</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chaxun_bianhao</sender>
+   <signal>clicked()</signal>
+   <receiver>coretClass</receiver>
+   <slot>bianhao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>237</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>464</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>coretClass</receiver>
+   <slot>xuefenpaixu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>492</x>
+     <y>438</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>519</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_12</sender>
+   <signal>clicked()</signal>
+   <receiver>coretClass</receiver>
+   <slot>jidianpaixu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>258</x>
+     <y>380</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>167</x>
+     <y>465</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_13</sender>
+   <signal>clicked()</signal>
+   <receiver>coretClass</receiver>
+   <slot>buliangjilupaixu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>407</x>
+     <y>381</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>353</x>
+     <y>464</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>coretClass</receiver>
+   <slot>deletexuesheng()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>454</x>
+     <y>349</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>69</y>
     </hint>
    </hints>
   </connection>
@@ -468,5 +1219,18 @@
   <slot>xuefenpaixu()</slot>
   <slot>shuaxin()</slot>
   <slot>laoshishoukepingfenpaixu()</slot>
+  <slot>xiugai()</slot>
+  <slot>shanchu()</slot>
+  <slot>add()</slot>
+  <slot>xuehaochaxun()</slot>
+  <slot>xingmingchaxun()</slot>
+  <slot>xueshengxiugai()</slot>
+  <slot>chaxunjiaoshi()</slot>
+  <slot>anpai()</slot>
+  <slot>cxap()</slot>
+  <slot>addxuesheng()</slot>
+  <slot>deletexuesheng()</slot>
+  <slot>jidianpaixu()</slot>
+  <slot>buliangjilupaixu()</slot>
  </slots>
 </ui>

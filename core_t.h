@@ -28,4 +28,15 @@ private slots:
 	void mingchen();
 	void xuefenpaixu();
 	void laoshishoukepingfenpaixu();
+	void xiugai();
+	void shanchu();
+	void add();
+	void xuehaochaxun();
+	void xingmingchaxun();
+	void xueshengxiugai();
+	void cxap();
+	void addxuesheng();
+	void deletexuesheng();
+	void jidianpaixu();
+	void buliangjilupaixu();
 };

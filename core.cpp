@@ -1,6 +1,6 @@
 #include "core.h"
 #include "Global.h"
-#include <QTableWidget>
+#include <QTablewidget>
 #include <QMessagebox>
 
 
@@ -67,7 +67,7 @@ core::core(QString ID,QWidget *parent, QWidget *top)
 	ui.name->setText(IDs);
 	for (int i = 0; i < ::list.num; i++)
 	{//和传进来id作比较，if
-		if (!strcmp(ID.toLatin1().data(), ::list.s_course[i].stu_id))
+		if (!strcmp(ID.toUtf8().data(), ::list.s_course[i].stu_id))
 		{
 			ui.tuike->insertPlainText("选课编号：");
 			ui.tuike->insertPlainText(::list.s_course[i].sub_id);
@@ -120,7 +120,7 @@ void core::exit() {
 }
 
 void core::choclassPress() {
-	switch (::list.choose(ID.toLatin1().data(),ui.subid->text().toLatin1().data(), ui.subscore->text().toFloat()))
+	switch (::list.choose(ID.toUtf8().data(),ui.subid->text().toUtf8().data(), ui.subscore->text().toFloat()))
 	{
 		case 1:
 			QMessageBox::information(this, tr("选课成功"), tr("您已成功选课！"), QMessageBox::Ok);
@@ -137,7 +137,7 @@ void core::choclassPress() {
 }
 
 void core::exitclassPress() {
-	switch (::list.refund(ID.toLatin1().data(), ui.subid_2->text().toLatin1().data()))
+	switch (::list.refund(ID.toUtf8().data(), ui.subid_2->text().toUtf8().data()))
 	{
 	case 1:
 		QMessageBox::information(this, tr("退课成功"), tr("您已成功退课！"), QMessageBox::Ok);
@@ -158,7 +158,7 @@ void core::searchSel() {
 }
 void core::bianhao()
 {
-	int i = ::list.select_subject(1, ui.bianhao->text().toLatin1().data(), ui.bianhao->text().toLatin1().data());
+	int i = ::list.select_subject(1, ui.bianhao->text().toUtf8().data(), ui.bianhao->text().toUtf8().data());
 	if (i >= 0) {
 		ui.chake->insertPlainText("课程编号：");
 		ui.chake->insertPlainText(::list.subject[i].id);
@@ -190,7 +190,7 @@ void core::bianhao()
 }
 void core::mingchen()
 {
-	int i = ::list.select_subject(2, ui.mingchen->text().toLatin1().data(),ui.mingchen->text().toLatin1().data());
+	int i = ::list.select_subject(2, ui.mingchen->text().toUtf8().data(),ui.mingchen->text().toUtf8().data());
 	if (i >= 0) {
 		ui.chake->insertPlainText("课程编号：");
 		ui.chake->insertPlainText(::list.subject[i].id);
@@ -247,14 +247,18 @@ void core::laoshishoukepingfenpaixu() {
 	if (::list.sort_teacher_grade() < 0) {
 		QMessageBox::warning(this, tr("查询失败"), tr("没有教师信息！"), QMessageBox::Ok);
 	}
-	else for (int i = 0; i < ::list.t_n; i++)
+	else
 	{
-		ui.shoukepingfen->insertPlainText("教师编号：");
-		ui.shoukepingfen->insertPlainText(::list.teacher[i].id);
-		ui.shoukepingfen->insertPlainText(" 姓名：");
-		ui.shoukepingfen->insertPlainText(::list.teacher[i].name);
-		ui.shoukepingfen->insertPlainText("授课评分：");
-		ui.shoukepingfen->insertPlainText(QString::number(::list.teacher[i].grade));
-		ui.shoukepingfen->insertPlainText("\n");
+		ui.shoukepingfen->setText("");
+		for (int i = 0; i < ::list.t_n; i++)
+		{
+			ui.shoukepingfen->insertPlainText("教师编号：");
+			ui.shoukepingfen->insertPlainText(::list.teacher[i].id);
+			ui.shoukepingfen->insertPlainText(" 姓名：");
+			ui.shoukepingfen->insertPlainText(::list.teacher[i].name);
+			ui.shoukepingfen->insertPlainText("授课评分：");
+			ui.shoukepingfen->insertPlainText(QString::number(::list.teacher[i].grade));
+			ui.shoukepingfen->insertPlainText("\n");
+		}
 	}
 }

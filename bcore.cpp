@@ -51,18 +51,18 @@ int bmain()
 					cin >> admin_chioce;
 					switch (admin_chioce)
 					{
-					case 1:
+					/*case 1:
 						list.add_student();
-						break;
-					case 2:
+						break;*/
+					/*case 2:
 						list.select_student();
-						break;
-					case 3:
+						break;*/
+					/*case 3:
 						list.delete_student();
-						break;
-					case 4:
+						break;*/
+					/*case 4:
 						list.update_student();
-						break;
+						break;*/
 					case 5:
 						list.show_student();
 						break;
@@ -72,24 +72,24 @@ int bmain()
 					case 7:
 						list.sort_student_infuluce();
 						break;
-					case 8:
+					/*case 8:
 						list.add_subject();
-						break;
+						break;*/
 					/*case 9:
 						list.select_subject();
 						break;*/
-					case 10:
+					/*case 10:
 						list.delete_subject();
-						break;
-					case 11:
+						break;*/
+					/*case 11:
 						list.update_subject();
-						break;
+						break;*/
 					case 12:
 						list.show_subject();
 						break;
-					case 13:
+					/*case 13:
 						list.teacher_c();
-						break;
+						break;*/
 					case 14:
 						list.query_course_socre();
 						break;

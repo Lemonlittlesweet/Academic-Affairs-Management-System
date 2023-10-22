@@ -22,13 +22,13 @@ testdemo::~testdemo()
 {}
 
 void testdemo::PushLoginClicked() {
-	if (::list.login_student(ui.username->text().toLatin1().data(), ui.pw->text().toLatin1().data())!=-1) {//登录判断 原 ui.username->text() == "admin" && ui.pw->text() == "123456"
+	if (::list.login_student(ui.username->text().toUtf8().data(), ui.pw->text().toUtf8().data())!=-1) {//登录判断 原 ui.username->text() == "admin" && ui.pw->text() == "123456"
 		this->hide();//切换新页面
 		core *c = new core(ui.username->text(), nullptr,this);
 		c->show();
 		ui.pw->clear();
 	}
-	else if (::list.login_teacher(ui.username->text().toLatin1().data(), ui.pw->text().toLatin1().data()) != -1) {//教师登录，之后切不同界面
+	else if (::list.login_teacher(ui.username->text().toUtf8().data(), ui.pw->text().toUtf8().data()) != -1) {//教师登录，之后切不同界面
 		this->hide();//切换新页面
 		core_t *c = new core_t(ui.username->text(), nullptr, this);
 		c->show();

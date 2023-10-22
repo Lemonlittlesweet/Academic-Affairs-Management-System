@@ -22,11 +22,11 @@ Register::~Register()
 
 void Register::PushFinishButton() {
 	if (!(ui.password->text().isEmpty() || ui.repw->text().isEmpty() || ui.user->text().isEmpty() || ui.grade->text().isEmpty() || ui.name->text().isEmpty() )) {
-		if ((ui.password->text() == ui.repw->text()) && (::list.regist_teacher(ui.user->text().toLatin1().data(), ui.name->text().toLatin1().data(), ui.password->text().toLatin1().data(), ui.grade->text().toFloat()) >= 0)) {
+		if ((ui.password->text() == ui.repw->text()) && (::list.regist_teacher(ui.user->text().toUtf8().data(), ui.name->text().toUtf8().data(), ui.password->text().toUtf8().data(), ui.grade->text().toFloat()) >= 0)) {
 			QMessageBox::information(this, tr("注册成功"), tr("您已成功注册！"), QMessageBox::Ok);
 			this->close();
 		}
-		else if (::list.regist_teacher(ui.user->text().toLatin1().data(), ui.name->text().toLatin1().data(), ui.password->text().toLatin1().data(), ui.grade->text().toFloat()) == -1) {
+		else if (::list.regist_teacher(ui.user->text().toUtf8().data(), ui.name->text().toUtf8().data(), ui.password->text().toUtf8().data(), ui.grade->text().toFloat()) == -1) {
 			QMessageBox::warning(this, tr("注册失败"), tr("账号已存在！"), QMessageBox::Ok);
 			//输入内容全部清除
 			ui.grade->clear();

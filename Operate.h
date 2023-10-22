@@ -30,21 +30,21 @@ public:
 		t_n = 0;
 		tc_n = 0;
 	}
-	void add_subject();//增加课程信息
+	int add_subject(char id[20], char name[20], char type[20], int hour, int score, char time[20]);//增加课程信息
 	int select_subject(int,char[20],char[20]);//查找课程信息
-	void delete_subject();//删除课程信息
-	void update_subject();//修改课程信息
+	int delete_subject(char id[20]);//删除课程信息
+	int update_subject(char id[20], char name[20], char type[20], int hour, int score, char time[20]);//修改课程信息
 	void show_subject();//浏览课程信息
 	void save_subject();//保存课程信息
 	void read_subject();//读取课程信息
 
 
 
-	void add_student();//增加学生信息
-	void select_student();//查找学生信息
-	void delete_student();//删除学生信息
-	void update_student();//修改学生信息
-	void show_student();//浏览学生信息
+	int add_student(char id[20], char name[20], char birthday[20], char department[20], char phone[20], char pwd[20], float,float);//增加学生信息
+	int select_student(int chioce, char id[20], char name[20]);//查找学生信息
+	int delete_student(char id[20]);//删除学生信息
+	int update_student(char id[20], char name[20], char birthday[20], char department[20], char phone[20]);//修改学生信息
+	int show_student();//浏览学生信息
 	void save_student();//保存学生信息
 	void read_student();//读取学生信息
 
@@ -55,12 +55,12 @@ public:
 	int login_student(char[], char[]);
 
 	//教师教授课程安排
-	void teacher_c();
+	int teacher_c(char tea_id[20], char sub_id[20]);
 
 	//学生绩点排序
-	void sort_student_grade();
+	int sort_student_grade();
 	//学生不良记录严重程度排序
-	void sort_student_infuluce();
+	int sort_student_infuluce();
 	//教师授课评分排序
 	int sort_teacher_grade();
 	//课程学分排序
