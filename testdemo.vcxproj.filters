@@ -70,6 +70,9 @@
     <ClCompile Include="Regist.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="core_t.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Register.h">
@@ -78,12 +81,18 @@
     <QtMoc Include="core.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="core_t.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="Register.ui">
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="core.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="core_t.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

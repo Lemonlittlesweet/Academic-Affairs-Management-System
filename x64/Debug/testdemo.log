@@ -1,3 +1,7 @@
-﻿  Register.cpp
-  Studnet_Operate.cpp
+﻿  moc core_t.h
+  core_t.cpp
+  testdemo.cpp
+d:\qt\dsprogress\testdemo\testdemo\core_t.cpp(28): warning C4129: “d”: 不可识别的字符转义序列
+d:\qt\dsprogress\testdemo\testdemo\core_t.cpp(29): warning C4129: “d”: 不可识别的字符转义序列
+  moc_core_t.cpp
   testdemo.vcxproj -> D:\Qt\dsprogress\testdemo\x64\Debug\testdemo.exe

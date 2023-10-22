@@ -31,7 +31,7 @@ public:
 		tc_n = 0;
 	}
 	void add_subject();//增加课程信息
-	void select_subject();//查找课程信息
+	int select_subject(int,char[20],char[20]);//查找课程信息
 	void delete_subject();//删除课程信息
 	void update_subject();//修改课程信息
 	void show_subject();//浏览课程信息
@@ -49,10 +49,10 @@ public:
 	void read_student();//读取学生信息
 
 	//教师注册
-	int regist_teacher(char[20], char[20], char[20], float);
+	int regist_teacher(char[], char[], char[], float);
 	//登录
-	int login_teacher(char[20],char[20]);
-	int login_student(char[20], char[20]);
+	int login_teacher(char[],char[]);
+	int login_student(char[], char[]);
 
 	//教师教授课程安排
 	void teacher_c();
@@ -62,18 +62,18 @@ public:
 	//学生不良记录严重程度排序
 	void sort_student_infuluce();
 	//教师授课评分排序
-	void sort_teacher_grade();
+	int sort_teacher_grade();
 	//课程学分排序
-	void sort_course_grade();
+	int sort_course_grade();
 
 	//学生成绩查询
 	void query_course_socre();
 
 
 
-	void choose();//选课
-	void refund();//退课
-	void show();//查看选课信息
+	int choose(char[20], char[20],float);//选课
+	int refund(char[20], char[20]);//退课
+	int show(char[20]);//查看选课信息
 	void save();//保存选课信息
 	void read();//读取选课信息
 

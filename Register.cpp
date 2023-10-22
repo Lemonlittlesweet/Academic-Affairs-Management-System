@@ -11,7 +11,7 @@ Register::Register(QWidget *parent)
 	this->setWindowIcon(QIcon(":/testdemo/image/shulogo.png"));//设定图标
 	ui.password->setValidator(new QRegExpValidator(QRegExp("[A-Za-z0-9!@#$%^&*()_+{}|:\"<>?]+$")));
 	ui.repw->setValidator(new QRegExpValidator(QRegExp("[A-Za-z0-9!@#$%^&*()_+{}|:\"<>?]+$")));
-	ui.user->setValidator(new QRegExpValidator(QRegExp("[0-9]+$")));//限定输入字符,要做限定4位首位为1
+	ui.user->setValidator(new QRegExpValidator(QRegExp("^1\\d{3}$")));//限定输入字符,要做限定4位首位为1
 	ui.grade->setValidator(new QRegExpValidator(QRegExp("^([0-9]|[1-9][0-9]|100)$")));
 	ui.mail->setValidator(new QRegularExpressionValidator(QRegularExpression("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$")));
 	//没做：邮箱格式正确

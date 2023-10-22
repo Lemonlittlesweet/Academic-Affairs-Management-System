@@ -12,21 +12,25 @@
 using namespace std;
 
 //选课
-void List::choose()
+int List::choose(char stu_id[20],char sub_id[20],float score)
 {
+	/*
 	cout << "请输入选课的学号：";
 	char stu_id[20];
+	*/
 	int temp = 0;
-	cin >> stu_id;
+	//cin >> stu_id;
 	for (int i = 0; i < n; i++)
 	{
 		if (!strcmp(stu_id, student[i].id))
 		{
 			temp++;
+			/*
 			cout << "请输入选修课程编号：";
 			char sub_id[20];
-			int temp_ = 0;
 			cin >> sub_id;
+			*/
+			int temp_ = 0;
 			for (int j = 0; j < num; j++)
 			{
 				if (!strcmp(sub_id, subject[j].id))
@@ -44,8 +48,8 @@ void List::choose()
 								{
 									if (!strcmp(subject[z].time, subject[j].time))
 									{
-										cout << "选课时间冲突，选课失败！" << endl;
-										return;//return warning
+										//cout << "选课时间冲突，选课失败！" << endl;
+										return -1;//return warning
 									}
 								}
 							}
@@ -57,49 +61,55 @@ void List::choose()
 					strcpy(s_course[num].stu_id, stu_id);
 					strcpy(s_course[num].sub_id, sub_id);
 
+					/*
 					cout << "请输入课程成绩：" << endl;
 					cin >> s_course[num].score;
-
+					*/
+					s_course[num].score = score;
 					num++;
 
 					subject[j].num++;
-					cout << "选课成功！" << endl;
-					return;
+					//cout << "选课成功！" << endl;
+					return 1;
 				}
 			}
 			if (temp_ == 0)
 			{
-				cout << "课程编号不存在，选课失败！" << endl;
-				return;
+				//cout << "课程编号不存在，选课失败！" << endl;
+				return -2;
 			}
 		}
 	}
-	if (temp == 0)
+	return -3;
+	/*if (temp == 0)
 	{
 		cout << "学号不存在，选课失败！" << endl;
-	}
+	}*/
 }
 //退课
-void List::refund()
+int List::refund(char stu_id[20], char sub_id[20])
 {
+	/*
 	cout << "请输入退课的学号：";
 	char stu_id[20];
-	int temp = 0;
 	cin >> stu_id;
+	*/
+	int temp = 0;
 	for (int i = 0; i < num; i++)
 	{
 		if (!strcmp(stu_id, s_course[i].stu_id))
 		{
 			temp++;
+			/*
 			cout << "请输入退课的课程编号：";
 			char sub_id[20];
-			int temp_ = 0;
 			cin >> sub_id;
-
+			*/
+			int temp_ = 0;
 			if (strcmp(sub_id, s_course[i].sub_id) != 0)
 			{
-				cout << "没有选修该课，退课失败！" << endl;
-				return;
+				//cout << "没有选修该课，退课失败！" << endl;
+				return -1;
 			}
 
 			for (int j = i; j < num - 1; j++)
@@ -115,29 +125,32 @@ void List::refund()
 					temp_++;
 
 					subject[j].num--;
-					cout << "退课成功！" << endl;
-					return;
+					//cout << "退课成功！" << endl;
+					return 1;
 				}
 			}
 			if (temp_ == 0)
 			{
-				cout << "课程编号不存在，退课失败！" << endl;
-				return;
+				//cout << "课程编号不存在，退课失败！" << endl;
+				return -2;
 			}
 		}
 	}
+	return -3;
+	/*
 	if (temp == 0)
 	{
 		cout << "学号不存在，退课失败！" << endl;
 	}
+	*/
 }
-//查看选课信息
-void List::show()
+//查看选课信息 暂时做不了
+int List::show(char stu_id[20])
 {
 	if (num == 0)
 	{
-		cout << "没有选课信息！" << endl;
-		return;
+		//cout << "没有选课信息！" << endl;
+		return -1;
 	}
 
 	for (int i = 0; i < num; i++)
@@ -150,7 +163,7 @@ void List::show()
 }
 
 
-//学生成绩查询
+//学生成绩查询 暂时做不了
 void List::query_course_socre()
 
 {
@@ -180,12 +193,12 @@ void List::query_course_socre()
 
 
 //教师授课评分排序
-void List::sort_teacher_grade()
+int List::sort_teacher_grade()
 {
 	if (t_n <= 0)
 	{
 		cout << "没有教师信息！" << endl;
-		return;
+		return -1;
 	}
 	for (int i = 0; i < t_n; i++)
 	{
@@ -206,14 +219,15 @@ void List::sort_teacher_grade()
 		teacher[i].show();
 
 	}
+	return 1;
 }
 //课程学分排序
-void List::sort_course_grade()
+int List::sort_course_grade()
 {
 	if (s_n <= 0)
 	{
-		cout << "没有课程信息，请先录入！" << endl;
-		return;
+		//cout << "没有课程信息，请先录入！" << endl;
+		return -1;
 	}
 	for (int i = 0; i < s_n; i++)
 	{
@@ -224,7 +238,8 @@ void List::sort_course_grade()
 			subject[j + 1] = s;
 		}
 	}
-	cout << "课程学分排序如下：" << endl;
+	return 1;
+	/*cout << "课程学分排序如下：" << endl;
 	for (int i = 0; i < s_n; i++)
 	{
 		cout << "课程编号：" << subject[i].id;
@@ -234,5 +249,5 @@ void List::sort_course_grade()
 		cout << "  课程学分：" << subject[i].score;
 		cout << "  课程时间：" << subject[i].time;
 		cout << "  课程选修人数：" << subject[i].num << endl;
-	}
+	}*/
 }

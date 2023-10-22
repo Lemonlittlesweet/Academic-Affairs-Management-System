@@ -53,438 +53,253 @@
       <property name="currentIndex">
        <number>3</number>
       </property>
-      <widget class="QWidget" name="tab">
+      <widget class="QWidget" name="tab_7">
        <attribute name="title">
-        <string>课程</string>
+        <string>选课</string>
        </attribute>
-       <layout class="QGridLayout" name="gridLayout_2">
-        <item row="0" column="0">
-         <widget class="QTableWidget" name="tableWidget">
-          <row>
-           <property name="text">
-            <string>1</string>
-           </property>
-          </row>
-          <row>
-           <property name="text">
-            <string>2</string>
-           </property>
-          </row>
-          <row>
-           <property name="text">
-            <string>3</string>
-           </property>
-          </row>
-          <column>
-           <property name="text">
-            <string>课程号</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>课程</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>老师</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>上课地址</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>上课时间</string>
-           </property>
-          </column>
-          <item row="0" column="0">
-           <property name="text">
-            <string>1</string>
-           </property>
-          </item>
-          <item row="1" column="0">
-           <property name="text">
-            <string>2</string>
-           </property>
-          </item>
-          <item row="1" column="4">
-           <property name="text">
-            <string>按周一到周五排序</string>
-           </property>
-          </item>
-          <item row="2" column="0">
-           <property name="text">
-            <string>3</string>
-           </property>
-          </item>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="tab_2">
-       <attribute name="title">
-        <string>成绩</string>
-       </attribute>
-       <layout class="QGridLayout" name="gridLayout_3">
-        <item row="0" column="0">
-         <widget class="QTableWidget" name="tableWidget_2">
-          <row>
-           <property name="text">
-            <string>1</string>
-           </property>
-          </row>
-          <row>
-           <property name="text">
-            <string>2</string>
-           </property>
-          </row>
-          <row>
-           <property name="text">
-            <string>3</string>
-           </property>
-          </row>
-          <column>
-           <property name="text">
-            <string>课程号</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>课程</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>老师</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>成绩</string>
-           </property>
-          </column>
-          <item row="0" column="2">
-           <property name="text">
-            <string>1</string>
-           </property>
-          </item>
-          <item row="1" column="2">
-           <property name="text">
-            <string>2</string>
-           </property>
-          </item>
-          <item row="2" column="2">
-           <property name="text">
-            <string>3</string>
-           </property>
-          </item>
-         </widget>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="tab_5">
-       <attribute name="title">
-        <string>作业</string>
-       </attribute>
-       <widget class="QWidget" name="horizontalLayoutWidget">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>10</y>
-          <width>631</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <item>
-          <widget class="QLabel" name="label_4">
-           <property name="text">
-            <string>课程</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="comboBox"/>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_5">
-           <property name="text">
-            <string>时间</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="comboBox_2"/>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_8">
-           <property name="text">
-            <string>成绩</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_9">
-           <property name="text">
-            <string>TextLabel</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QTextBrowser" name="textBrowser">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>60</y>
-          <width>671</width>
-          <height>261</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_3">
-        <property name="geometry">
-         <rect>
-          <x>300</x>
-          <y>330</y>
-          <width>75</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>提交</string>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="tab_6">
-       <attribute name="title">
-        <string>考勤</string>
-       </attribute>
-       <widget class="QWidget" name="horizontalLayoutWidget_2">
-        <property name="geometry">
-         <rect>
-          <x>30</x>
-          <y>10</y>
-          <width>631</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <item>
-          <widget class="QLabel" name="label_6">
-           <property name="text">
-            <string>课程</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="comboBox_3"/>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_7">
-           <property name="text">
-            <string>时间</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="comboBox_4"/>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_10">
-           <property name="text">
-            <string>签到状态</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_11">
-           <property name="text">
-            <string>TextLabel</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QPushButton" name="pushButton_4">
-        <property name="geometry">
-         <rect>
-          <x>290</x>
-          <y>300</y>
-          <width>75</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>签到</string>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="uuu">
-       <attribute name="title">
-        <string>通知</string>
-       </attribute>
-       <widget class="QWidget" name="horizontalLayoutWidget_3">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>10</y>
-          <width>631</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_3">
-         <item>
-          <widget class="QLabel" name="label_12">
-           <property name="text">
-            <string>TextLabel</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="comboBox_5"/>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_14">
-           <property name="text">
-            <string>TextLabel</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_13">
-           <property name="text">
-            <string>TextLabel</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_15">
-           <property name="text">
-            <string>TextLabel</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_16">
-           <property name="text">
-            <string>TextLabel</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QTextBrowser" name="textBrowser_2">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>50</y>
-          <width>641</width>
-          <height>261</height>
-         </rect>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="tab_3">
-       <attribute name="title">
-        <string>私信</string>
-       </attribute>
-       <widget class="QWidget" name="horizontalLayoutWidget_4">
+       <widget class="QWidget" name="formLayoutWidget">
         <property name="geometry">
          <rect>
           <x>40</x>
-          <y>20</y>
+          <y>60</y>
+          <width>231</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_17">
+           <property name="text">
+            <string>选修课程编号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="subid"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_18">
+           <property name="text">
+            <string>课程成绩</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="subscore"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QTextBrowser" name="xuanke">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>30</y>
+          <width>351</width>
+          <height>281</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="cho_class">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>180</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>选课</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>320</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>学分排序</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="title">
+        <string>查询课程信息</string>
+       </attribute>
+       <widget class="QWidget" name="formLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>30</y>
           <width>160</width>
           <height>80</height>
          </rect>
         </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_4"/>
+        <layout class="QFormLayout" name="formLayout_4">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_20">
+           <property name="text">
+            <string>课程编号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="bianhao"/>
+         </item>
+        </layout>
        </widget>
-      </widget>
-      <widget class="QWidget" name="tab_4">
-       <attribute name="title">
-        <string>查找</string>
-       </attribute>
-       <widget class="QTableWidget" name="tableWidget_3">
+       <widget class="QWidget" name="formLayoutWidget_4">
         <property name="geometry">
          <rect>
-          <x>430</x>
-          <y>10</y>
+          <x>50</x>
+          <y>170</y>
+          <width>160</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout_5">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_21">
+           <property name="text">
+            <string>课程名称</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="mingchen"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="chaxun_bianhao">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>120</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>查询</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="chaxun_mingchen">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>270</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>查询</string>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="chake">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>60</y>
           <width>256</width>
           <height>192</height>
          </rect>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton">
+      </widget>
+      <widget class="QWidget" name="tab_10">
+       <attribute name="title">
+        <string>查询老师信息</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_6">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>200</y>
-          <width>75</width>
+          <x>360</x>
+          <y>260</y>
+          <width>111</width>
           <height>23</height>
          </rect>
         </property>
         <property name="text">
-         <string>查找</string>
+         <string>老师授课评分排序</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QTextBrowser" name="shoukepingfen">
         <property name="geometry">
          <rect>
-          <x>130</x>
-          <y>200</y>
-          <width>75</width>
-          <height>23</height>
+          <x>300</x>
+          <y>40</y>
+          <width>256</width>
+          <height>192</height>
          </rect>
-        </property>
-        <property name="text">
-         <string>清空</string>
         </property>
        </widget>
-       <widget class="QWidget" name="layoutWidget">
+      </widget>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>退课</string>
+       </attribute>
+       <widget class="QWidget" name="formLayoutWidget_2">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>60</y>
-          <width>195</width>
-          <height>74</height>
+          <x>50</x>
+          <y>40</y>
+          <width>221</width>
+          <height>80</height>
          </rect>
         </property>
-        <layout class="QFormLayout" name="formLayout">
+        <layout class="QFormLayout" name="formLayout_3">
          <item row="0" column="0">
-          <widget class="QLabel" name="label">
+          <widget class="QLabel" name="label_19">
            <property name="text">
-            <string>学/工号</string>
+            <string>退课课程编号</string>
            </property>
           </widget>
          </item>
          <item row="0" column="1">
-          <widget class="QLineEdit" name="lineEdit"/>
-         </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="label_2">
-           <property name="text">
-            <string>姓名</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLineEdit" name="lineEdit_2"/>
-         </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="label_3">
-           <property name="text">
-            <string>课程</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QLineEdit" name="lineEdit_3"/>
+          <widget class="QLineEdit" name="subid_2"/>
          </item>
         </layout>
+       </widget>
+       <widget class="QPushButton" name="exit_class">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>200</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>退课</string>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="tuike">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>40</y>
+          <width>256</width>
+          <height>192</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="search_sel">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>270</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>查询</string>
+        </property>
        </widget>
       </widget>
      </widget>
@@ -530,8 +345,128 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>chaxun_mingchen</sender>
+   <signal>clicked()</signal>
+   <receiver>coreClass</receiver>
+   <slot>mingchen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>266</x>
+     <y>328</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>218</x>
+     <y>461</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cho_class</sender>
+   <signal>clicked()</signal>
+   <receiver>coreClass</receiver>
+   <slot>choclassPress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>184</x>
+     <y>290</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>277</x>
+     <y>38</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>coreClass</receiver>
+   <slot>xuefenpaixu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>459</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>519</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exit_class</sender>
+   <signal>clicked()</signal>
+   <receiver>coreClass</receiver>
+   <slot>exitclassPress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>205</x>
+     <y>42</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chaxun_bianhao</sender>
+   <signal>clicked()</signal>
+   <receiver>coreClass</receiver>
+   <slot>bianhao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>277</x>
+     <y>219</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>464</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>search_sel</sender>
+   <signal>clicked()</signal>
+   <receiver>coreClass</receiver>
+   <slot>searchSel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>548</x>
+     <y>379</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>503</x>
+     <y>38</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>coreClass</receiver>
+   <slot>laoshishoukepingfenpaixu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>207</x>
+     <y>134</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>211</x>
+     <y>70</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>exit()</slot>
+  <slot>choclassPress()</slot>
+  <slot>exitclassPress()</slot>
+  <slot>searchSel()</slot>
+  <slot>bianhao()</slot>
+  <slot>mingchen()</slot>
+  <slot>xuefenpaixu()</slot>
+  <slot>shuaxin()</slot>
+  <slot>laoshishoukepingfenpaixu()</slot>
  </slots>
 </ui>

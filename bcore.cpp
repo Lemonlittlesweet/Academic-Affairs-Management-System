@@ -75,9 +75,9 @@ int bmain()
 					case 8:
 						list.add_subject();
 						break;
-					case 9:
+					/*case 9:
 						list.select_subject();
-						break;
+						break;*/
 					case 10:
 						list.delete_subject();
 						break;
@@ -119,13 +119,13 @@ int bmain()
 					switch (student_chioce)
 					{
 					case 1:
-						list.choose();
+						//list.choose();
 						break;
 					case 2:
-						list.refund();
+						//list.refund();
 						break;
 					case 3:
-						list.show();
+						//list.show();
 						break;
 
 					case 4:

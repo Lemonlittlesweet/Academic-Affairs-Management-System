@@ -2,15 +2,15 @@
 
 #include <QMainWindow>
 #include "ui_core.h"
-#include <QtCharts>
-QT_CHARTS_USE_NAMESPACE
+//#include <QtCharts>
+//QT_CHARTS_USE_NAMESPACE
 
 class core : public QMainWindow
 {
 	Q_OBJECT
 
 public:
-	core(QString, QWidget *parent = nullptr, QWidget * top = nullptr);
+	core(QString ID,QWidget *parent = nullptr, QWidget * top = nullptr);
 	~core();
 
 private:
@@ -19,6 +19,13 @@ private:
 	QString ID;
 
 private slots:
-	void sortTableByCol(int col);
+	//void sortTableByCol(int col);
 	void exit();
+	void choclassPress();
+	void exitclassPress();
+	void searchSel();
+	void bianhao();
+	void mingchen();
+	void xuefenpaixu();
+	void laoshishoukepingfenpaixu();
 };

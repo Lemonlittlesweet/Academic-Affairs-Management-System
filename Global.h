@@ -4,6 +4,7 @@
 #include<conio.h>
 #include<ctime>
 #include <fstream>
+#include <QString>
 #include "Subject.h"
 #include "Student.h"
 #include "Teacher.h"
@@ -13,5 +14,4 @@
 #ifndef _GLOBAL_H
 #define _GLOBAL_H
 extern List list;
-
 #endif

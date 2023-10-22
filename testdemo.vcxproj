@@ -91,11 +91,13 @@
   <ItemGroup>
     <QtRcc Include="testdemo.qrc" />
     <QtUic Include="core.ui" />
+    <QtUic Include="core_t.ui" />
     <QtUic Include="Register.ui" />
     <QtUic Include="testdemo.ui" />
     <QtMoc Include="testdemo.h" />
     <ClCompile Include="bcore.cpp" />
     <ClCompile Include="core.cpp" />
+    <ClCompile Include="core_t.cpp" />
     <ClCompile Include="Interface.cpp" />
     <ClCompile Include="Log_in.cpp" />
     <ClCompile Include="Regist.cpp" />
@@ -114,6 +116,7 @@
     <QtMoc Include="core.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="core_t.h" />
     <ClInclude Include="Global.h" />
     <ClInclude Include="Interface.h" />
     <ClInclude Include="Operate.h" />

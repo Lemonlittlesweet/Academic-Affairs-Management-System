@@ -39,22 +39,23 @@ one:cout << "请输入课程编号：";
 	cout << "添加课程信息成功！" << endl;
 };
 //查询课程信息
-void List::select_subject()
+int List::select_subject(int chioce,char id[20],char name[20])
 {
 	if (s_n <= 0)
 	{
-		cout << "没有课程信息，请先录入！" << endl;
-		return;//return -1 warning 无课程
+		//cout << "没有课程信息，请先录入！" << endl;
+		return -1;//return -1 warning 无课程
 	}
-	cout << "1.按课程编号查询  2.按课程名称查询：" << endl;//分上下两块两个按钮，右边显示
+	/*cout << "1.按课程编号查询  2.按课程名称查询：" << endl;//分上下两块两个按钮，右边显示
 	int chioce;
-	cin >> chioce;
+	cin >> chioce;*/
 	if (chioce == 1)
 	{
-		cout << "请输入查询的课程编号：";
-		char id[20];
 		int temp = 0;
-		cin >> id;
+		/*cout << "请输入查询的课程编号：";
+		char id[20];
+		
+		cin >> id;*/
 		for (int i = 0; i < s_n; i++)
 		{
 			if (!strcmp(id, subject[i].id))
@@ -67,20 +68,22 @@ void List::select_subject()
 				cout << "  课程学分：" << subject[i].score;
 				cout << "  课程时间：" << subject[i].time;
 				cout << "  课程选修人数：" << subject[i].num << endl;
+				return i;
 				break;
 			}
 		}
 		if (temp == 0)
 		{
-			cout << "查找的课程信息不存在！" << endl;//return -2接warning
+			//cout << "查找的课程信息不存在！" << endl;//return -2接warning
+			return -2;
 		}
 	}
 	else if (chioce == 2)
 	{
-		cout << "请输入查询的课程名称：";
-		char name[20];
 		int temp = 0;
-		cin >> name;
+		/*cout << "请输入查询的课程名称：";
+		char name[20];
+		cin >> name;*/
 		for (int i = 0; i < s_n; i++)
 		{
 			if (!strcmp(name, subject[i].name))
@@ -93,14 +96,17 @@ void List::select_subject()
 				cout << "  课程学分：" << subject[i].score;
 				cout << "  课程时间：" << subject[i].time;
 				cout << "  课程选修人数：" << subject[i].num << endl;
+				return i;
 				break;
 			}
 		}
 		if (temp == 0)
 		{
-			cout << "查找的课程信息不存在！" << endl;//同上
+			//cout << "查找的课程信息不存在！" << endl;//同上
+			return -2;
 		}
 	}
+
 	/*else
 	{
 		cout << "输入有误！" << endl;
