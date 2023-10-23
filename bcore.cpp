@@ -18,7 +18,7 @@ List list;
 
 
 //主函数
-int bmain()
+/*int bmain()
 {
 
 	/*List list;
@@ -26,14 +26,14 @@ int bmain()
 	list.read_subject();
 	list.read_student();
 	list.read();
-	list.read_teacher();*/
+	list.read_teacher();
 
 	while (1)
 	{
 
 	first:menu();
 		int chioce;
-		cout << "请输入选择：" << endl;
+		//cout << "请输入选择：" << endl;
 		cin >> chioce;
 		switch (chioce)
 		{
@@ -47,7 +47,7 @@ int bmain()
 				{
 					student_menu();
 					int admin_chioce;
-					cout << "请输入你的选择：";
+					//cout << "请输入你的选择：";
 					cin >> admin_chioce;
 					switch (admin_chioce)
 					{
@@ -62,7 +62,7 @@ int bmain()
 						break;*/
 					/*case 4:
 						list.update_student();
-						break;*/
+						break;
 					case 5:
 						list.show_student();
 						break;
@@ -83,13 +83,13 @@ int bmain()
 						break;*/
 					/*case 11:
 						list.update_subject();
-						break;*/
+						break;
 					case 12:
 						list.show_subject();
 						break;
 					/*case 13:
 						list.teacher_c();
-						break;*/
+						break;
 					case 14:
 						list.query_course_socre();
 						break;
@@ -154,7 +154,7 @@ int bmain()
 			list.save_student();
 			list.save();
 			list.save_teacher();
-			cout << "谢谢使用！" << endl;*/
+			cout << "谢谢使用！" << endl;
 
 			return 0;
 		default:
@@ -163,4 +163,4 @@ int bmain()
 		}
 	}
 	return 0;
-}
+}*/

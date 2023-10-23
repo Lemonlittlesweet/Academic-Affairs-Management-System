@@ -25,12 +25,12 @@ int List::login_teacher(char id[20],char pwd[20])
 		if (!strcmp(id, teacher[i].id)
 			&& !strcmp(pwd, teacher[i].pwd))
 		{
-			cout << "登陆成功！" << endl;
+			//cout << "登陆成功！" << endl;
 			return i;
 		}
 	}
 
-	cout << "登陆失败！" << endl;
+	//cout << "登陆失败！" << endl;
 	return -1;
 }
 int List::login_student(char id[20], char pwd[20])
@@ -47,12 +47,12 @@ int List::login_student(char id[20], char pwd[20])
 		if (!strcmp(id, student[i].id)
 			&& !strcmp(pwd, student[i].pwd))
 		{
-			cout << "登陆成功！" << endl;
+			//cout << "登陆成功！" << endl;
 			return i;
 		}
 	}
 
-	cout << "登陆失败！" << endl;
+	//cout << "登陆失败！" << endl;
 	return -1;
 }
 

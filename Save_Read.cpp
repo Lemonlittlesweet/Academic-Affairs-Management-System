@@ -29,7 +29,7 @@ void List::save_subject()
 
 
 	}
-	cout << "文件保存成功！" << endl;
+	//cout << "文件保存成功！" << endl;
 	outFile.close();
 }
 //读取课程信息
@@ -38,7 +38,7 @@ void List::read_subject()
 	ifstream in("subject.txt", ios::in);
 	if (!in.is_open())
 	{
-		cout << "打开文件失败" << endl;
+		//cout << "打开文件失败" << endl;
 		return;
 
 	}
@@ -58,7 +58,7 @@ void List::read_subject()
 	}
 	s_n--;
 
-	cout << "文件导入成功！" << endl;
+	//cout << "文件导入成功！" << endl;
 	in.close();
 }
 
@@ -79,7 +79,7 @@ void List::save_teacher()
 
 
 	}
-	cout << "文件保存成功！" << endl;
+	//cout << "文件保存成功！" << endl;
 	outFile.close();
 }
 //读取教师信息
@@ -88,7 +88,7 @@ void List::read_teacher()
 	ifstream in("teacher.txt", ios::in);
 	if (!in.is_open())
 	{
-		cout << "打开文件失败" << endl;
+		//cout << "打开文件失败" << endl;
 		return;
 
 	}
@@ -105,7 +105,7 @@ void List::read_teacher()
 	}
 	t_n--;
 
-	cout << "文件导入成功！" << endl;
+	//cout << "文件导入成功！" << endl;
 	in.close();
 }
 
@@ -130,7 +130,7 @@ void List::save_student()
 
 
 	}
-	cout << "文件保存成功！" << endl;
+	//cout << "文件保存成功！" << endl;
 	outFile.close();
 }
 //读取学生信息
@@ -139,7 +139,7 @@ void List::read_student()
 	ifstream in("student.txt", ios::in);
 	if (!in.is_open())
 	{
-		cout << "打开文件失败" << endl;
+		//cout << "打开文件失败" << endl;
 		return;
 
 	}
@@ -150,8 +150,8 @@ void List::read_student()
 			>> student[n].name
 			>> student[n].birthday
 			>> student[n].department
-			>> student[n].pwd
 			>> student[n].phone
+			>> student[n].pwd
 			>> student[n].grade
 			>> student[n].influence;
 
@@ -160,7 +160,7 @@ void List::read_student()
 	}
 	n--;
 
-	cout << "文件导入成功！" << endl;
+	//cout << "文件导入成功！" << endl;
 	in.close();
 }
 
@@ -180,7 +180,7 @@ void List::save()
 
 
 	}
-	cout << "文件保存成功！" << endl;
+	//cout << "文件保存成功！" << endl;
 	outFile.close();
 }
 //读取选课信息
@@ -189,7 +189,7 @@ void List::read()
 	ifstream in("select.txt", ios::in);
 	if (!in.is_open())
 	{
-		cout << "打开文件失败" << endl;
+		//cout << "打开文件失败" << endl;
 		return;
 
 	}
@@ -205,6 +205,6 @@ void List::read()
 	}
 	num--;
 
-	cout << "文件导入成功！" << endl;
+	//cout << "文件导入成功！" << endl;
 	in.close();
 }

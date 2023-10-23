@@ -13,10 +13,10 @@ public:
 
 	void show()
 	{
-		cout << "教师编号：" << id << "  "
+		/*cout << "教师编号：" << id << "  "
 			<< "姓名：" << name << "  "
 			<< "密码：" << pwd << "  "
-			<< "授课评分：" << grade << endl;
+			<< "授课评分：" << grade << endl;*/
 	}
 };
 

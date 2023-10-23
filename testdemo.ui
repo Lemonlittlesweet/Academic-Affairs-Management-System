@@ -349,7 +349,7 @@
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionversion_0_0_1">
    <property name="text">
-    <string>version:0.0.1</string>
+    <string>version:0.0.2</string>
    </property>
   </action>
   <action name="actionError_please_contant_admin">

@@ -51,71 +51,26 @@
        <bool>true</bool>
       </property>
       <property name="currentIndex">
-       <number>7</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_7">
        <attribute name="title">
-        <string>选课</string>
+        <string>浏览课程信息</string>
        </attribute>
-       <widget class="QWidget" name="formLayoutWidget">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>60</y>
-          <width>231</width>
-          <height>80</height>
-         </rect>
-        </property>
-        <layout class="QFormLayout" name="formLayout_2">
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_17">
-           <property name="text">
-            <string>选修课程编号</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLineEdit" name="subid"/>
-         </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="label_18">
-           <property name="text">
-            <string>课程成绩</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLineEdit" name="subscore"/>
-         </item>
-        </layout>
-       </widget>
        <widget class="QTextBrowser" name="xuanke">
         <property name="geometry">
          <rect>
-          <x>330</x>
+          <x>80</x>
           <y>30</y>
-          <width>351</width>
+          <width>601</width>
           <height>281</height>
          </rect>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="cho_class">
-        <property name="geometry">
-         <rect>
-          <x>120</x>
-          <y>180</y>
-          <width>75</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>选课</string>
         </property>
        </widget>
        <widget class="QPushButton" name="pushButton_5">
         <property name="geometry">
          <rect>
-          <x>470</x>
+          <x>310</x>
           <y>320</y>
           <width>75</width>
           <height>23</height>
@@ -482,43 +437,8 @@
       </widget>
       <widget class="QWidget" name="tab_8">
        <attribute name="title">
-        <string>退课</string>
+        <string>查询学生选课</string>
        </attribute>
-       <widget class="QWidget" name="formLayoutWidget_2">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>80</y>
-          <width>221</width>
-          <height>80</height>
-         </rect>
-        </property>
-        <layout class="QFormLayout" name="formLayout_3">
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_19">
-           <property name="text">
-            <string>退课课程编号</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLineEdit" name="subid_2"/>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QPushButton" name="exit_class">
-        <property name="geometry">
-         <rect>
-          <x>110</x>
-          <y>200</y>
-          <width>75</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>退课</string>
-        </property>
-       </widget>
        <widget class="QTextBrowser" name="tuike">
         <property name="geometry">
          <rect>
@@ -1017,22 +937,6 @@
    </hints>
   </connection>
   <connection>
-   <sender>exit_class</sender>
-   <signal>clicked()</signal>
-   <receiver>coretClass</receiver>
-   <slot>exitclassPress()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>175</x>
-     <y>301</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>205</x>
-     <y>42</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>pushButton_7</sender>
    <signal>clicked()</signal>
    <receiver>coretClass</receiver>
@@ -1061,22 +965,6 @@
     <hint type="destinationlabel">
      <x>507</x>
      <y>464</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>cho_class</sender>
-   <signal>clicked()</signal>
-   <receiver>coretClass</receiver>
-   <slot>choclassPress()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>184</x>
-     <y>290</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>277</x>
-     <y>38</y>
     </hint>
    </hints>
   </connection>

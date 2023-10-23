@@ -51,7 +51,7 @@
        <bool>true</bool>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_7">
        <attribute name="title">
@@ -123,6 +123,69 @@
         </property>
         <property name="text">
          <string>学分排序</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>退课</string>
+       </attribute>
+       <widget class="QWidget" name="formLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>40</y>
+          <width>221</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout_3">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>退课课程编号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="subid_2"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="exit_class">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>200</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>退课</string>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="tuike">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>40</y>
+          <width>256</width>
+          <height>192</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="search_sel">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>270</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>查询</string>
         </property>
        </widget>
       </widget>
@@ -236,69 +299,6 @@
           <width>256</width>
           <height>192</height>
          </rect>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="tab_8">
-       <attribute name="title">
-        <string>退课</string>
-       </attribute>
-       <widget class="QWidget" name="formLayoutWidget_2">
-        <property name="geometry">
-         <rect>
-          <x>50</x>
-          <y>40</y>
-          <width>221</width>
-          <height>80</height>
-         </rect>
-        </property>
-        <layout class="QFormLayout" name="formLayout_3">
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_19">
-           <property name="text">
-            <string>退课课程编号</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLineEdit" name="subid_2"/>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QPushButton" name="exit_class">
-        <property name="geometry">
-         <rect>
-          <x>110</x>
-          <y>200</y>
-          <width>75</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>退课</string>
-        </property>
-       </widget>
-       <widget class="QTextBrowser" name="tuike">
-        <property name="geometry">
-         <rect>
-          <x>380</x>
-          <y>40</y>
-          <width>256</width>
-          <height>192</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="search_sel">
-        <property name="geometry">
-         <rect>
-          <x>470</x>
-          <y>270</y>
-          <width>75</width>
-          <height>23</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>查询</string>
         </property>
        </widget>
       </widget>

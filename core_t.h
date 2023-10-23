@@ -21,8 +21,6 @@ private:
 private slots:
 	//void sortTableByCol(int col);
 	void exit();
-	void choclassPress();
-	void exitclassPress();
 	void searchSel();
 	void bianhao();
 	void mingchen();

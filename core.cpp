@@ -25,8 +25,8 @@ core::core(QString ID,QWidget *parent, QWidget *top)
 	ui.setupUi(this);
 	this->setWindowIcon(QIcon(":/testdemo/image/shulogo.png"));//设定图标
 	ui.subscore->setValidator(new QRegExpValidator(QRegExp("^([0-9]|[1-9][0-9]|100)$")));
-	ui.subid->setValidator(new QRegExpValidator(QRegExp("^\d+$")));
-	ui.subid_2->setValidator(new QRegExpValidator(QRegExp("^\d+$")));
+	ui.subid->setValidator(new QRegExpValidator(QRegExp("^[0-9]*$")));
+	ui.subid_2->setValidator(new QRegExpValidator(QRegExp("^[0-9]*$")));
 
 
 	for (int i = 0; i < ::list.t_n; i++)
@@ -113,10 +113,7 @@ core::~core() {
 void core::exit() {
 	this->close();
 	top->show();
-	::list.save_subject();
-	::list.save_student();
-	::list.save();
-	::list.save_teacher();//不确定是否存在风险的写法
+	//不确定是否存在风险的写法
 }
 
 void core::choclassPress() {
@@ -154,7 +151,19 @@ void core::exitclassPress() {
 }
 
 void core::searchSel() {
+	for (int i = 0; i < ::list.num; i++)
+	{
+		if (!strcmp(ID.toUtf8().data(), ::list.s_course[i].stu_id))
+		{
+			ui.tuike->setText("");
+			ui.tuike->insertPlainText("选课编号：");
+			ui.tuike->insertPlainText(::list.s_course[i].sub_id);
+			ui.tuike->insertPlainText(" 成绩：");
+			ui.tuike->insertPlainText(QString::number(::list.s_course[i].score));
+			ui.tuike->insertPlainText("\n");
+		}
 
+	}
 }
 void core::bianhao()
 {

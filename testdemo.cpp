@@ -19,7 +19,12 @@ testdemo::testdemo(QWidget *parent)
 }
 
 testdemo::~testdemo()
-{}
+{
+	::list.save_subject();
+	::list.save_student();
+	::list.save();
+	::list.save_teacher();//不确定是否存在风险的写法
+}
 
 void testdemo::PushLoginClicked() {
 	if (::list.login_student(ui.username->text().toUtf8().data(), ui.pw->text().toUtf8().data())!=-1) {//登录判断 原 ui.username->text() == "admin" && ui.pw->text() == "123456"

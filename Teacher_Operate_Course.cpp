@@ -68,13 +68,13 @@ int List::select_subject(int chioce,char id[20],char name[20])
 			if (!strcmp(id, subject[i].id))
 			{//直接return i，ui界面读取信息写入
 				temp++;
-				cout << "课程编号：" << subject[i].id;
+				/*cout << "课程编号：" << subject[i].id;
 				cout << "  课程名称：" << subject[i].name;
 				cout << "  课程性质：" << subject[i].type;
 				cout << "  课程总学时：" << subject[i].hour;
 				cout << "  课程学分：" << subject[i].score;
 				cout << "  课程时间：" << subject[i].time;
-				cout << "  课程选修人数：" << subject[i].num << endl;
+				cout << "  课程选修人数：" << subject[i].num << endl;*/
 				return i;
 				break;
 			}
@@ -96,13 +96,13 @@ int List::select_subject(int chioce,char id[20],char name[20])
 			if (!strcmp(name, subject[i].name))
 			{//同上
 				temp++;
-				cout << "课程编号：" << subject[i].id;
+				/*cout << "课程编号：" << subject[i].id;
 				cout << "  课程名称：" << subject[i].name;
 				cout << "  课程性质：" << subject[i].type;
 				cout << "  课程总学时：" << subject[i].hour;
 				cout << "  课程学分：" << subject[i].score;
 				cout << "  课程时间：" << subject[i].time;
-				cout << "  课程选修人数：" << subject[i].num << endl;
+				cout << "  课程选修人数：" << subject[i].num << endl;*/
 				return i;
 				break;
 			}
@@ -203,7 +203,7 @@ int List::update_subject(char id[20],char name[20],char type[20],int hour,int sc
 			subject[i].hour = hour;
 			subject[i].score = score;
 			strcpy(subject[i].time, time);
-			subject[i].num = 0;
+			//subject[i].num = 0;
 			return 1;
 			//cout << "修改成功！" << endl;
 			break;
@@ -264,17 +264,17 @@ void List::show_subject()
 {
 	if (s_n <= 0)
 	{
-		cout << "没有课程信息，请先录入！" << endl;
+		//cout << "没有课程信息，请先录入！" << endl;
 		return;
 	}
 	for (int i = 0; i < s_n; i++)
 	{
-		cout << "课程编号：" << subject[i].id;
+		/*cout << "课程编号：" << subject[i].id;
 		cout << "  课程名称：" << subject[i].name;
 		cout << "  课程性质：" << subject[i].type;
 		cout << "  课程总学时：" << subject[i].hour;
 		cout << "  课程学分：" << subject[i].score;
 		cout << "  课程时间：" << subject[i].time;
-		cout << "  课程选修人数：" << subject[i].num << endl;
+		cout << "  课程选修人数：" << subject[i].num << endl;*/
 	}
 }

@@ -24,10 +24,6 @@ core_t::core_t(QString ID,QWidget *parent, QWidget *top)
 {
 	ui.setupUi(this);
 	this->setWindowIcon(QIcon(":/testdemo/image/shulogo.png"));//设定图标
-	ui.subscore->setValidator(new QRegExpValidator(QRegExp("^([0-9]|[1-9][0-9]|100)$")));
-	ui.subid->setValidator(new QRegExpValidator(QRegExp("^\d+$")));
-	ui.subid_2->setValidator(new QRegExpValidator(QRegExp("^\d+$")));
-
 
 	for (int i = 0; i < ::list.t_n; i++)
 	{
@@ -67,14 +63,13 @@ core_t::core_t(QString ID,QWidget *parent, QWidget *top)
 	ui.name->setText(IDs);
 	for (int i = 0; i < ::list.num; i++)
 	{
-		if (!strcmp(ID.toUtf8().data(), ::list.s_course[i].stu_id))
-		{
+			ui.tuike->insertPlainText("学号：");
+			ui.tuike->insertPlainText(::list.s_course[i].stu_id);
 			ui.tuike->insertPlainText("选课编号：");
 			ui.tuike->insertPlainText(::list.s_course[i].sub_id);
 			ui.tuike->insertPlainText( " 成绩：");
 			ui.tuike->insertPlainText(QString::number(::list.s_course[i].score));
 			ui.tuike->insertPlainText("\n");
-		}
 		/*cout << "学号：" << ::list.s_course[i].stu_id << "  ";
 		cout << "选课编号：" << ::list.s_course[i].sub_id << "  ";
 		cout << "成绩：" << ::list.s_course[i].score << endl;*/
@@ -130,48 +125,21 @@ core_t::~core_t() {
 void core_t::exit() {
 	this->close();
 	top->show();
-	::list.save_subject();
-	::list.save_student();
-	::list.save();
-	::list.save_teacher();//不确定是否存在风险的写法
-}
-
-void core_t::choclassPress() {
-	switch (::list.choose(ID.toUtf8().data(),ui.subid->text().toUtf8().data(), ui.subscore->text().toFloat()))
-	{
-		case 1:
-			QMessageBox::information(this, tr("选课成功"), tr("您已成功选课！"), QMessageBox::Ok);
-			break;
-		case -1:
-			QMessageBox::warning(this, tr("选课失败"), tr("选课时间冲突，选课失败！"), QMessageBox::Ok);
-			break;
-		case -2:
-			QMessageBox::warning(this, tr("选课失败"), tr("课程编号不存在，选课失败！"), QMessageBox::Ok);
-			break;
-		default:
-			QMessageBox::warning(this, tr("选课失败"), tr("未知错误，选课失败！请联系管理员！"), QMessageBox::Ok);
-	}
-}
-
-void core_t::exitclassPress() {
-	switch (::list.refund(ID.toUtf8().data(), ui.subid_2->text().toUtf8().data()))
-	{
-	case 1:
-		QMessageBox::information(this, tr("退课成功"), tr("您已成功退课！"), QMessageBox::Ok);
-		break;
-	case -1:
-		QMessageBox::warning(this, tr("退课失败"), tr("没有选修该课，退课失败！"), QMessageBox::Ok);
-		break;
-	case -2:
-		QMessageBox::warning(this, tr("退课失败"), tr("课程编号不存在，退课失败！"), QMessageBox::Ok);
-		break;
-	default:
-		QMessageBox::warning(this, tr("退课失败"), tr("未知错误，退课失败！请联系管理员！"), QMessageBox::Ok);
-	}
+	
 }
 
 void core_t::searchSel() {
-
+	for (int i = 0; i < ::list.num; i++)
+	{
+		ui.tuike->setText("");
+		ui.tuike->insertPlainText("学号：");
+		ui.tuike->insertPlainText(::list.s_course[i].stu_id);
+		ui.tuike->insertPlainText("选课编号：");
+		ui.tuike->insertPlainText(::list.s_course[i].sub_id);
+		ui.tuike->insertPlainText(" 成绩：");
+		ui.tuike->insertPlainText(QString::number(::list.s_course[i].score));
+		ui.tuike->insertPlainText("\n");
+	}
 }
 void core_t::bianhao()
 {

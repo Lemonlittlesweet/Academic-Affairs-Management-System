@@ -155,9 +155,9 @@ int List::show(char stu_id[20])
 
 	for (int i = 0; i < num; i++)
 	{//和传进来id作比较，if
-		cout << "学号：" << s_course[i].stu_id << "  ";
+		/*cout << "学号：" << s_course[i].stu_id << "  ";
 		cout << "选课编号：" << s_course[i].sub_id << "  ";
-		cout << "成绩：" << s_course[i].score << endl;
+		cout << "成绩：" << s_course[i].score << endl;*/
 	}
 
 }
@@ -169,21 +169,21 @@ void List::query_course_socre()
 {
 	if (num == 0)
 	{
-		cout << "没有选课信息！" << endl;
+		//cout << "没有选课信息！" << endl;
 		return;
 	}
 
 	char id[20];
-	cout << "请输入查询的学号：" << endl;
+	//cout << "请输入查询的学号：" << endl;
 	cin >> id;
 
 	for (int i = 0; i < num; i++)
 	{
 		if (!strcmp(id, s_course[i].stu_id))
 		{
-			cout << "学号：" << s_course[i].stu_id << "  ";
+			/*cout << "学号：" << s_course[i].stu_id << "  ";
 			cout << "选课编号：" << s_course[i].sub_id << "  ";
-			cout << "成绩：" << s_course[i].score << endl;
+			cout << "成绩：" << s_course[i].score << endl;*/
 		}
 
 	}
@@ -197,7 +197,7 @@ int List::sort_teacher_grade()
 {
 	if (t_n <= 0)
 	{
-		cout << "没有教师信息！" << endl;
+		//cout << "没有教师信息！" << endl;
 		return -1;
 	}
 	for (int i = 0; i < t_n; i++)
@@ -213,7 +213,7 @@ int List::sort_teacher_grade()
 		}
 	}
 
-	cout << "教师授课评分排序如下：" << endl;
+	//cout << "教师授课评分排序如下：" << endl;
 	for (int i = 0; i < t_n; i++)
 	{
 		teacher[i].show();
