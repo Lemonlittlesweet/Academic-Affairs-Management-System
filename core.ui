@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>725</width>
-    <height>486</height>
+    <width>826</width>
+    <height>617</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -51,7 +51,7 @@
        <bool>true</bool>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>7</number>
       </property>
       <widget class="QWidget" name="tab_7">
        <attribute name="title">
@@ -76,16 +76,6 @@
          </item>
          <item row="0" column="1">
           <widget class="QLineEdit" name="subid"/>
-         </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="label_18">
-           <property name="text">
-            <string>课程成绩</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLineEdit" name="subscore"/>
          </item>
         </layout>
        </widget>
@@ -266,10 +256,10 @@
        <widget class="QTextBrowser" name="chake">
         <property name="geometry">
          <rect>
-          <x>370</x>
-          <y>60</y>
-          <width>256</width>
-          <height>192</height>
+          <x>290</x>
+          <y>30</y>
+          <width>401</width>
+          <height>301</height>
          </rect>
         </property>
        </widget>
@@ -294,11 +284,218 @@
        <widget class="QTextBrowser" name="shoukepingfen">
         <property name="geometry">
          <rect>
-          <x>300</x>
+          <x>70</x>
           <y>40</y>
-          <width>256</width>
+          <width>691</width>
           <height>192</height>
          </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>查询作业</string>
+       </attribute>
+       <widget class="QTextBrowser" name="homesearch">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>50</y>
+          <width>601</width>
+          <height>192</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>280</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>查询</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>交作业</string>
+       </attribute>
+       <widget class="QWidget" name="formLayoutWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>40</y>
+          <width>531</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>课程号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="homework_course"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>答案</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QTextEdit" name="handhomework"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>330</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>交作业</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>教师评分</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>90</y>
+          <width>160</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="sco_info">
+           <property name="text">
+            <string>您给 打分：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="tea_sc"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>240</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>提交</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>240</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>上一位</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>240</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>下一位</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_8">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>110</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>开始打分</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>签到</string>
+       </attribute>
+       <widget class="QWidget" name="formLayoutWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>90</y>
+          <width>251</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout_6">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>课程号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>教师号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="q_subid"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="q_teaid"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton_9">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>280</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>签到</string>
         </property>
        </widget>
       </widget>
@@ -311,7 +508,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>725</width>
+     <width>826</width>
      <height>23</height>
     </rect>
    </property>
@@ -336,8 +533,8 @@
    <slot>exit()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>627</x>
-     <y>55</y>
+     <x>815</x>
+     <y>66</y>
     </hint>
     <hint type="destinationlabel">
      <x>611</x>
@@ -352,8 +549,8 @@
    <slot>mingchen()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>266</x>
-     <y>328</y>
+     <x>175</x>
+     <y>387</y>
     </hint>
     <hint type="destinationlabel">
      <x>218</x>
@@ -384,8 +581,8 @@
    <slot>xuefenpaixu()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>459</x>
-     <y>109</y>
+     <x>492</x>
+     <y>438</y>
     </hint>
     <hint type="destinationlabel">
      <x>519</x>
@@ -416,8 +613,8 @@
    <slot>bianhao()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>277</x>
-     <y>219</y>
+     <x>175</x>
+     <y>237</y>
     </hint>
     <hint type="destinationlabel">
      <x>279</x>
@@ -448,12 +645,124 @@
    <slot>laoshishoukepingfenpaixu()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>207</x>
-     <y>134</y>
+     <x>382</x>
+     <y>378</y>
     </hint>
     <hint type="destinationlabel">
      <x>211</x>
      <y>70</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>coreClass</receiver>
+   <slot>searchhome()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>356</x>
+     <y>391</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>385</x>
+     <y>462</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>coreClass</receiver>
+   <slot>handhomework()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>370</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>588</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>coreClass</receiver>
+   <slot>stu_former()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>266</x>
+     <y>349</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>592</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>coreClass</receiver>
+   <slot>stu_hand()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>397</x>
+     <y>345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>359</x>
+     <y>590</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>coreClass</receiver>
+   <slot>stu_latter()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>491</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>630</x>
+     <y>594</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>coreClass</receiver>
+   <slot>startbegin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>510</x>
+     <y>212</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>35</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>coreClass</receiver>
+   <slot>qiandao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>341</x>
+     <y>380</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>406</x>
+     <y>588</y>
     </hint>
    </hints>
   </connection>
@@ -468,5 +777,12 @@
   <slot>xuefenpaixu()</slot>
   <slot>shuaxin()</slot>
   <slot>laoshishoukepingfenpaixu()</slot>
+  <slot>searchhome()</slot>
+  <slot>handhomework()</slot>
+  <slot>stu_former()</slot>
+  <slot>stu_hand()</slot>
+  <slot>stu_latter()</slot>
+  <slot>startbegin()</slot>
+  <slot>qiandao()</slot>
  </slots>
 </ui>

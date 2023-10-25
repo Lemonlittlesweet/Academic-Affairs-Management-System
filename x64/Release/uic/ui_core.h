@@ -22,7 +22,9 @@
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QTextBrowser>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QToolBar>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -41,8 +43,6 @@ public:
     QFormLayout *formLayout_2;
     QLabel *label_17;
     QLineEdit *subid;
-    QLabel *label_18;
-    QLineEdit *subscore;
     QTextBrowser *xuanke;
     QPushButton *cho_class;
     QPushButton *pushButton_5;
@@ -69,6 +69,34 @@ public:
     QWidget *tab_10;
     QPushButton *pushButton_6;
     QTextBrowser *shoukepingfen;
+    QWidget *tab;
+    QTextBrowser *homesearch;
+    QPushButton *pushButton;
+    QWidget *tab_2;
+    QWidget *formLayoutWidget_5;
+    QFormLayout *formLayout;
+    QLabel *label;
+    QLineEdit *homework_course;
+    QLabel *label_2;
+    QTextEdit *handhomework;
+    QPushButton *pushButton_2;
+    QWidget *tab_3;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *verticalLayout;
+    QLabel *sco_info;
+    QLineEdit *tea_sc;
+    QPushButton *pushButton_3;
+    QPushButton *pushButton_4;
+    QPushButton *pushButton_7;
+    QPushButton *pushButton_8;
+    QWidget *tab_4;
+    QWidget *formLayoutWidget_6;
+    QFormLayout *formLayout_6;
+    QLabel *label_3;
+    QLabel *label_4;
+    QLineEdit *q_subid;
+    QLineEdit *q_teaid;
+    QPushButton *pushButton_9;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -77,7 +105,7 @@ public:
     {
         if (coreClass->objectName().isEmpty())
             coreClass->setObjectName(QString::fromUtf8("coreClass"));
-        coreClass->resize(725, 486);
+        coreClass->resize(826, 617);
         centralWidget = new QWidget(coreClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         gridLayout = new QGridLayout(centralWidget);
@@ -128,16 +156,6 @@ public:
         subid->setObjectName(QString::fromUtf8("subid"));
 
         formLayout_2->setWidget(0, QFormLayout::FieldRole, subid);
-
-        label_18 = new QLabel(formLayoutWidget);
-        label_18->setObjectName(QString::fromUtf8("label_18"));
-
-        formLayout_2->setWidget(1, QFormLayout::LabelRole, label_18);
-
-        subscore = new QLineEdit(formLayoutWidget);
-        subscore->setObjectName(QString::fromUtf8("subscore"));
-
-        formLayout_2->setWidget(1, QFormLayout::FieldRole, subscore);
 
         xuanke = new QTextBrowser(tab_7);
         xuanke->setObjectName(QString::fromUtf8("xuanke"));
@@ -225,7 +243,7 @@ public:
         chaxun_mingchen->setGeometry(QRect(90, 270, 75, 23));
         chake = new QTextBrowser(tab_9);
         chake->setObjectName(QString::fromUtf8("chake"));
-        chake->setGeometry(QRect(370, 60, 256, 192));
+        chake->setGeometry(QRect(290, 30, 401, 301));
         tabWidget->addTab(tab_9, QString());
         tab_10 = new QWidget();
         tab_10->setObjectName(QString::fromUtf8("tab_10"));
@@ -234,15 +252,125 @@ public:
         pushButton_6->setGeometry(QRect(360, 260, 111, 23));
         shoukepingfen = new QTextBrowser(tab_10);
         shoukepingfen->setObjectName(QString::fromUtf8("shoukepingfen"));
-        shoukepingfen->setGeometry(QRect(300, 40, 256, 192));
+        shoukepingfen->setGeometry(QRect(70, 40, 691, 192));
         tabWidget->addTab(tab_10, QString());
+        tab = new QWidget();
+        tab->setObjectName(QString::fromUtf8("tab"));
+        homesearch = new QTextBrowser(tab);
+        homesearch->setObjectName(QString::fromUtf8("homesearch"));
+        homesearch->setGeometry(QRect(120, 50, 601, 192));
+        pushButton = new QPushButton(tab);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(300, 280, 75, 23));
+        tabWidget->addTab(tab, QString());
+        tab_2 = new QWidget();
+        tab_2->setObjectName(QString::fromUtf8("tab_2"));
+        formLayoutWidget_5 = new QWidget(tab_2);
+        formLayoutWidget_5->setObjectName(QString::fromUtf8("formLayoutWidget_5"));
+        formLayoutWidget_5->setGeometry(QRect(120, 40, 531, 221));
+        formLayout = new QFormLayout(formLayoutWidget_5);
+        formLayout->setSpacing(6);
+        formLayout->setContentsMargins(11, 11, 11, 11);
+        formLayout->setObjectName(QString::fromUtf8("formLayout"));
+        formLayout->setContentsMargins(0, 0, 0, 0);
+        label = new QLabel(formLayoutWidget_5);
+        label->setObjectName(QString::fromUtf8("label"));
+
+        formLayout->setWidget(0, QFormLayout::LabelRole, label);
+
+        homework_course = new QLineEdit(formLayoutWidget_5);
+        homework_course->setObjectName(QString::fromUtf8("homework_course"));
+
+        formLayout->setWidget(0, QFormLayout::FieldRole, homework_course);
+
+        label_2 = new QLabel(formLayoutWidget_5);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+
+        formLayout->setWidget(1, QFormLayout::LabelRole, label_2);
+
+        handhomework = new QTextEdit(formLayoutWidget_5);
+        handhomework->setObjectName(QString::fromUtf8("handhomework"));
+
+        formLayout->setWidget(1, QFormLayout::FieldRole, handhomework);
+
+        pushButton_2 = new QPushButton(tab_2);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(300, 330, 75, 23));
+        tabWidget->addTab(tab_2, QString());
+        tab_3 = new QWidget();
+        tab_3->setObjectName(QString::fromUtf8("tab_3"));
+        verticalLayoutWidget = new QWidget(tab_3);
+        verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
+        verticalLayoutWidget->setGeometry(QRect(290, 90, 160, 80));
+        verticalLayout = new QVBoxLayout(verticalLayoutWidget);
+        verticalLayout->setSpacing(6);
+        verticalLayout->setContentsMargins(11, 11, 11, 11);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        sco_info = new QLabel(verticalLayoutWidget);
+        sco_info->setObjectName(QString::fromUtf8("sco_info"));
+
+        verticalLayout->addWidget(sco_info);
+
+        tea_sc = new QLineEdit(verticalLayoutWidget);
+        tea_sc->setObjectName(QString::fromUtf8("tea_sc"));
+
+        verticalLayout->addWidget(tea_sc);
+
+        pushButton_3 = new QPushButton(tab_3);
+        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        pushButton_3->setGeometry(QRect(330, 240, 75, 23));
+        pushButton_4 = new QPushButton(tab_3);
+        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        pushButton_4->setGeometry(QRect(220, 240, 75, 23));
+        pushButton_7 = new QPushButton(tab_3);
+        pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
+        pushButton_7->setGeometry(QRect(440, 240, 75, 23));
+        pushButton_8 = new QPushButton(tab_3);
+        pushButton_8->setObjectName(QString::fromUtf8("pushButton_8"));
+        pushButton_8->setGeometry(QRect(480, 110, 75, 23));
+        tabWidget->addTab(tab_3, QString());
+        tab_4 = new QWidget();
+        tab_4->setObjectName(QString::fromUtf8("tab_4"));
+        formLayoutWidget_6 = new QWidget(tab_4);
+        formLayoutWidget_6->setObjectName(QString::fromUtf8("formLayoutWidget_6"));
+        formLayoutWidget_6->setGeometry(QRect(260, 90, 251, 81));
+        formLayout_6 = new QFormLayout(formLayoutWidget_6);
+        formLayout_6->setSpacing(6);
+        formLayout_6->setContentsMargins(11, 11, 11, 11);
+        formLayout_6->setObjectName(QString::fromUtf8("formLayout_6"));
+        formLayout_6->setContentsMargins(0, 0, 0, 0);
+        label_3 = new QLabel(formLayoutWidget_6);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+
+        formLayout_6->setWidget(0, QFormLayout::LabelRole, label_3);
+
+        label_4 = new QLabel(formLayoutWidget_6);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+
+        formLayout_6->setWidget(1, QFormLayout::LabelRole, label_4);
+
+        q_subid = new QLineEdit(formLayoutWidget_6);
+        q_subid->setObjectName(QString::fromUtf8("q_subid"));
+
+        formLayout_6->setWidget(0, QFormLayout::FieldRole, q_subid);
+
+        q_teaid = new QLineEdit(formLayoutWidget_6);
+        q_teaid->setObjectName(QString::fromUtf8("q_teaid"));
+
+        formLayout_6->setWidget(1, QFormLayout::FieldRole, q_teaid);
+
+        pushButton_9 = new QPushButton(tab_4);
+        pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
+        pushButton_9->setGeometry(QRect(300, 280, 75, 23));
+        tabWidget->addTab(tab_4, QString());
 
         gridLayout->addWidget(tabWidget, 1, 0, 1, 1);
 
         coreClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(coreClass);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 725, 23));
+        menuBar->setGeometry(QRect(0, 0, 826, 23));
         coreClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(coreClass);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -260,8 +388,15 @@ public:
         QObject::connect(chaxun_bianhao, SIGNAL(clicked()), coreClass, SLOT(bianhao()));
         QObject::connect(search_sel, SIGNAL(clicked()), coreClass, SLOT(searchSel()));
         QObject::connect(pushButton_6, SIGNAL(clicked()), coreClass, SLOT(laoshishoukepingfenpaixu()));
+        QObject::connect(pushButton, SIGNAL(clicked()), coreClass, SLOT(searchhome()));
+        QObject::connect(pushButton_2, SIGNAL(clicked()), coreClass, SLOT(handhomework()));
+        QObject::connect(pushButton_4, SIGNAL(clicked()), coreClass, SLOT(stu_former()));
+        QObject::connect(pushButton_3, SIGNAL(clicked()), coreClass, SLOT(stu_hand()));
+        QObject::connect(pushButton_7, SIGNAL(clicked()), coreClass, SLOT(stu_latter()));
+        QObject::connect(pushButton_8, SIGNAL(clicked()), coreClass, SLOT(startbegin()));
+        QObject::connect(pushButton_9, SIGNAL(clicked()), coreClass, SLOT(qiandao()));
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(7);
 
 
         QMetaObject::connectSlotsByName(coreClass);
@@ -273,7 +408,6 @@ public:
         name->setText(QCoreApplication::translate("coreClass", "TextLabel", nullptr));
         exit->setText(QCoreApplication::translate("coreClass", "\351\200\200\345\207\272", nullptr));
         label_17->setText(QCoreApplication::translate("coreClass", "\351\200\211\344\277\256\350\257\276\347\250\213\347\274\226\345\217\267", nullptr));
-        label_18->setText(QCoreApplication::translate("coreClass", "\350\257\276\347\250\213\346\210\220\347\273\251", nullptr));
         cho_class->setText(QCoreApplication::translate("coreClass", "\351\200\211\350\257\276", nullptr));
         pushButton_5->setText(QCoreApplication::translate("coreClass", "\345\255\246\345\210\206\346\216\222\345\272\217", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_7), QCoreApplication::translate("coreClass", "\351\200\211\350\257\276", nullptr));
@@ -288,6 +422,22 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_9), QCoreApplication::translate("coreClass", "\346\237\245\350\257\242\350\257\276\347\250\213\344\277\241\346\201\257", nullptr));
         pushButton_6->setText(QCoreApplication::translate("coreClass", "\350\200\201\345\270\210\346\216\210\350\257\276\350\257\204\345\210\206\346\216\222\345\272\217", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_10), QCoreApplication::translate("coreClass", "\346\237\245\350\257\242\350\200\201\345\270\210\344\277\241\346\201\257", nullptr));
+        pushButton->setText(QCoreApplication::translate("coreClass", "\346\237\245\350\257\242", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("coreClass", "\346\237\245\350\257\242\344\275\234\344\270\232", nullptr));
+        label->setText(QCoreApplication::translate("coreClass", "\350\257\276\347\250\213\345\217\267", nullptr));
+        label_2->setText(QCoreApplication::translate("coreClass", "\347\255\224\346\241\210", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("coreClass", "\344\272\244\344\275\234\344\270\232", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("coreClass", "\344\272\244\344\275\234\344\270\232", nullptr));
+        sco_info->setText(QCoreApplication::translate("coreClass", "\346\202\250\347\273\231 \346\211\223\345\210\206\357\274\232", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("coreClass", "\346\217\220\344\272\244", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("coreClass", "\344\270\212\344\270\200\344\275\215", nullptr));
+        pushButton_7->setText(QCoreApplication::translate("coreClass", "\344\270\213\344\270\200\344\275\215", nullptr));
+        pushButton_8->setText(QCoreApplication::translate("coreClass", "\345\274\200\345\247\213\346\211\223\345\210\206", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("coreClass", "\346\225\231\345\270\210\350\257\204\345\210\206", nullptr));
+        label_3->setText(QCoreApplication::translate("coreClass", "\350\257\276\347\250\213\345\217\267", nullptr));
+        label_4->setText(QCoreApplication::translate("coreClass", "\346\225\231\345\270\210\345\217\267", nullptr));
+        pushButton_9->setText(QCoreApplication::translate("coreClass", "\347\255\276\345\210\260", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_4), QCoreApplication::translate("coreClass", "\347\255\276\345\210\260", nullptr));
     } // retranslateUi
 
 };

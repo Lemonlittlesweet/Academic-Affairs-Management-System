@@ -247,7 +247,7 @@ public:
     void retranslateUi(QMainWindow *testdemoClass)
     {
         testdemoClass->setWindowTitle(QCoreApplication::translate("testdemoClass", "testdemo", nullptr));
-        actionversion_0_0_1->setText(QCoreApplication::translate("testdemoClass", "version:0.0.2", nullptr));
+        actionversion_0_0_1->setText(QCoreApplication::translate("testdemoClass", "version:0.1.1", nullptr));
         actionError_please_contant_admin->setText(QCoreApplication::translate("testdemoClass", "Error please contant admin", nullptr));
         label->setText(QCoreApplication::translate("testdemoClass", "\350\264\246\345\217\267", nullptr));
         label_2->setText(QCoreApplication::translate("testdemoClass", "\345\257\206\347\240\201", nullptr));

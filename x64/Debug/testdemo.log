@@ -1,7 +1,2 @@
-﻿  core.cpp
-  core_t.cpp
-d:\qt\dsprogress\testdemo\testdemo\core.cpp(28): warning C4129: “d”: 不可识别的字符转义序列
-d:\qt\dsprogress\testdemo\testdemo\core.cpp(29): warning C4129: “d”: 不可识别的字符转义序列
-d:\qt\dsprogress\testdemo\testdemo\core_t.cpp(28): warning C4129: “d”: 不可识别的字符转义序列
-d:\qt\dsprogress\testdemo\testdemo\core_t.cpp(29): warning C4129: “d”: 不可识别的字符转义序列
-  testdemo.vcxproj -> D:\Qt\dsprogress\testdemo\x64\Debug\testdemo.exe
+﻿  uic core.ui
+C:\Users\ROG\AppData\Local\QtMsBuild\qt_globals.targets(293,5): error : [QtRunWork] Error starting process /uic: 系统找不到指定的文件。

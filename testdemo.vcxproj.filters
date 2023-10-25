@@ -73,6 +73,12 @@
     <ClCompile Include="core_t.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="time.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="message.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Register.h">
@@ -84,6 +90,9 @@
     <QtMoc Include="core_t.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="message.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="Register.ui">
@@ -93,6 +102,9 @@
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="core_t.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="message.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
@@ -113,6 +125,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="time.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

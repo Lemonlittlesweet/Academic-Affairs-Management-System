@@ -2,6 +2,7 @@
 #include "Register.h"
 #include "core.h"
 #include "core_t.h"
+#include "message.h"
 #include "Global.h"
 #include <QMessageBox>
 
@@ -23,7 +24,12 @@ testdemo::~testdemo()
 	::list.save_subject();
 	::list.save_student();
 	::list.save();
-	::list.save_teacher();//不确定是否存在风险的写法
+	::list.save_teacher();
+	::list.save_content();
+	::list.save_subwork();
+	::list.save_message();
+	::list.save_teacher_course();
+	//不确定是否存在风险的写法
 }
 
 void testdemo::PushLoginClicked() {
@@ -32,6 +38,8 @@ void testdemo::PushLoginClicked() {
 		core *c = new core(ui.username->text(), nullptr,this);
 		c->show();
 		ui.pw->clear();
+		message *m=new message(ui.username->text(), nullptr);
+		m->show();
 	}
 	else if (::list.login_teacher(ui.username->text().toUtf8().data(), ui.pw->text().toUtf8().data()) != -1) {//教师登录，之后切不同界面
 		this->hide();//切换新页面

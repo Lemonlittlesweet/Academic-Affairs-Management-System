@@ -33,8 +33,27 @@ private slots:
 	void xingmingchaxun();
 	void xueshengxiugai();
 	void cxap();
+	void aptea();
 	void addxuesheng();
 	void deletexuesheng();
 	void jidianpaixu();
 	void buliangjilupaixu();
+	void sendhome();
+	void searchhome();
+	void jidianjiangxu();
+	void buliangjiluyanzhongchengdujiangxu();
+	void xfjxpf();
+	void lsskpxjxpx();
+
+
+	void send();
+	void chaxunmessage();
+	void addscore();
+
+	void chaxunchengji();
+	void correct();
+	void former();
+	void latter();
+	void q_add();
+	void q_sea();
 };
