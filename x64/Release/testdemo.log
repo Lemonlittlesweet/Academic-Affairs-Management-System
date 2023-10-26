@@ -1,4 +1,6 @@
-﻿  main.cpp
+﻿  core.cpp
+  main.cpp
   testdemo.cpp
+  moc_core.cpp
   moc_testdemo.cpp
   testdemo.vcxproj -> D:\Qt\dsprogress\testdemo\x64\Release\testdemo.exe

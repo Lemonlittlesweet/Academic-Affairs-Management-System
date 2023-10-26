@@ -68,7 +68,8 @@ public:
     {
         if (testdemoClass->objectName().isEmpty())
             testdemoClass->setObjectName(QString::fromUtf8("testdemoClass"));
-        testdemoClass->resize(805, 488);
+        testdemoClass->resize(900, 500);
+        testdemoClass->setMinimumSize(QSize(600, 400));
         actionversion_0_0_1 = new QAction(testdemoClass);
         actionversion_0_0_1->setObjectName(QString::fromUtf8("actionversion_0_0_1"));
         actionError_please_contant_admin = new QAction(testdemoClass);
@@ -77,7 +78,7 @@ public:
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         gridLayout_2 = new QGridLayout(centralWidget);
         gridLayout_2->setSpacing(6);
-        gridLayout_2->setContentsMargins(11, 11, 11, 11);
+        gridLayout_2->setContentsMargins(6, 6, 6, 6);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         verticalSpacer_7 = new QSpacerItem(20, 23, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -91,7 +92,7 @@ public:
         frame->setObjectName(QString::fromUtf8("frame"));
         gridLayout = new QGridLayout(frame);
         gridLayout->setSpacing(6);
-        gridLayout->setContentsMargins(11, 11, 11, 11);
+        gridLayout->setContentsMargins(6, 6, 6, 6);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         verticalSpacer_5 = new QSpacerItem(20, 18, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -219,7 +220,7 @@ public:
         testdemoClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(testdemoClass);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 805, 23));
+        menuBar->setGeometry(QRect(0, 0, 900, 23));
         menu = new QMenu(menuBar);
         menu->setObjectName(QString::fromUtf8("menu"));
         testdemoClass->setMenuBar(menuBar);
@@ -247,7 +248,7 @@ public:
     void retranslateUi(QMainWindow *testdemoClass)
     {
         testdemoClass->setWindowTitle(QCoreApplication::translate("testdemoClass", "testdemo", nullptr));
-        actionversion_0_0_1->setText(QCoreApplication::translate("testdemoClass", "version:0.0.2", nullptr));
+        actionversion_0_0_1->setText(QCoreApplication::translate("testdemoClass", "version:1.0.1", nullptr));
         actionError_please_contant_admin->setText(QCoreApplication::translate("testdemoClass", "Error please contant admin", nullptr));
         label->setText(QCoreApplication::translate("testdemoClass", "\350\264\246\345\217\267", nullptr));
         label_2->setText(QCoreApplication::translate("testdemoClass", "\345\257\206\347\240\201", nullptr));

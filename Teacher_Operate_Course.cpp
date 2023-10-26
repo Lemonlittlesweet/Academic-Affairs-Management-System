@@ -18,7 +18,7 @@ int List::add_subject(char id[20], char name[20], char type[20], int hour, int s
 	cin >> subject[s_n].id;*/
 	for (int i = 0; i < s_n; i++)
 	{
-		if (!strcmp(subject[s_n].id, subject[i].id))
+		if (!strcmp(id, subject[i].id))
 		{
 			return -1;
 			/*cout << "存在该课程编号，请重新输入！" << endl;
@@ -35,6 +35,7 @@ int List::add_subject(char id[20], char name[20], char type[20], int hour, int s
 	cin >> subject[s_n].score;
 	cout << "请输入课程时间：";
 	cin >> subject[s_n].time;*/
+	strcpy(subject[s_n].id, id);
 	strcpy(subject[s_n].name, name);
 	strcpy(subject[s_n].type, type);
 	subject[s_n].hour = hour;
@@ -254,10 +255,10 @@ int List::teacher_c(char tea_id[20],char sub_id[20])
 			}
 		}
 	}
-	if (temp == 0)
+	/*if (temp == 0)
 	{
 		return -2;// cout << "教师不存在，安排失败！" << endl;
-	}
+	}*/
 }
 //弃用 浏览课程信息 自行遍历 查询所有
 void List::show_subject()
@@ -277,4 +278,70 @@ void List::show_subject()
 		cout << "  课程时间：" << subject[i].time;
 		cout << "  课程选修人数：" << subject[i].num << endl;*/
 	}
+}
+//布置作业
+int List::send_homework(char id[20],char sub_id[20],char mes[30])
+{
+	/*cout << "请输入你的教师号：";
+	cin >> content[con_n].teacher_id;
+	cout << "请输入你的课程号：";
+	cin >> content[con_n].subject_id;
+	cout << "请输入你要布置的作业：";
+	cin >> content[con_n].content;
+	cout << "作业已经成功发布啦！" << endl;*/
+	for (int i = 0; i < s_n; i++)
+	{
+		if (!strcmp(sub_id, subject[i].id))
+		{
+			strcpy(content[con_n].teacher_id, id);
+			strcpy(content[con_n].subject_id, sub_id);
+			strcpy(content[con_n].content, mes);
+			con_n++;
+			return 1;
+			break;
+		}
+		//else
+			//cout << "并没有查询到该课程号!";
+
+	}
+	return -1;
+}
+//弃用 展示作业布置情况
+int List::show_homework()
+{
+	int i = 0;
+	for (i = 0; i < con_n; i++)
+	{
+		/*cout << "教师号：" << content[i].teacher_id << endl;
+		cout << "课程号：" << content[i].subject_id << endl;
+		cout << "作业内容：" << content[i].content << endl;*/
+	}
+	return i;
+}
+//弃用 展示教师的选课安排
+void List::show_arrange_course()
+{
+	int flag = 0;
+	for (int i = 0; i < tc_n; i++)
+	{
+		//if (!strcmp(id, t_course[i].teacher_id))
+		{
+			flag = 1;
+			for (int j = 0; j < s_n; j++)
+			{
+				if (!strcmp(t_course[i].sub_id, subject[j].id))
+				{
+					cout << "  课程编号：" << subject[j].id;
+					cout << "  课程名称：" << subject[j].name;
+					cout << "  课程性质：" << subject[j].type;
+					cout << "  课程总学时：" << subject[j].hour;
+					cout << "  课程学分：" << subject[j].score;
+					cout << "  课程时间：" << subject[j].time;
+					cout << "  课程选修人数：" << subject[j].num << endl;
+				}
+			}
+		}
+	}
+	if (flag == 0)
+		cout << "您并没有排课！" << endl;
 }

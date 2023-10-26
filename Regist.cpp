@@ -11,7 +11,7 @@
 using namespace std;
 
 //教师注册
-int List::regist_teacher(char id [20], char name [20], char pwd [20], float grade)
+int List::regist_teacher(char id [20], char name [20], char pwd [20])
 {
 	//cout << "请输入教师编号：" << endl;
 	strcpy(teacher[t_n].id , id);
@@ -28,7 +28,7 @@ int List::regist_teacher(char id [20], char name [20], char pwd [20], float grad
 	//cout << "请输入教师密码：" << endl;
 	strcpy(teacher[t_n].pwd, pwd);
 	//cout << "请输入教师授课评分：" << endl;
-	teacher[t_n].grade = grade;
+	teacher[t_n].grade = -1;
 	t_n++;
 	//cout << "注册成功！" << endl;
 	return t_n - 1;

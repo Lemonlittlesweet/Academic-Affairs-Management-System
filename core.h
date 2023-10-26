@@ -10,7 +10,7 @@ class core : public QMainWindow
 	Q_OBJECT
 
 public:
-	core(QString ID,QWidget *parent = nullptr, QWidget * top = nullptr);
+	core(QString ID, QWidget *parent = nullptr, QWidget * top = nullptr);
 	~core();
 
 private:
@@ -27,5 +27,14 @@ private slots:
 	void bianhao();
 	void mingchen();
 	void xuefenpaixu();
+	void xuefenpaixuj();
 	void laoshishoukepingfenpaixu();
+	void laoshij();
+	void searchhome();
+	void handhomework();
+	void stu_former();
+	void stu_hand();
+	void stu_latter();
+	void startbegin();
+	void qiandao();
 };

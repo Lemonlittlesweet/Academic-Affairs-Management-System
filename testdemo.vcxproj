@@ -86,18 +86,21 @@
     <ClCompile>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <DebugInformationFormat>None</DebugInformationFormat>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <Optimization>MaxSpeed</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="message.cpp" />
+    <ClCompile Include="time.cpp" />
     <QtRcc Include="testdemo.qrc" />
     <QtUic Include="core.ui" />
     <QtUic Include="core_t.ui" />
+    <QtUic Include="message.ui" />
     <QtUic Include="Register.ui" />
     <QtUic Include="testdemo.ui" />
     <QtMoc Include="testdemo.h" />
@@ -122,6 +125,8 @@
     <QtMoc Include="core.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="message.h" />
+    <ClInclude Include="time.h" />
     <QtMoc Include="core_t.h" />
     <ClInclude Include="Global.h" />
     <ClInclude Include="Interface.h" />

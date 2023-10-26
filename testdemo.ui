@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>805</width>
-    <height>488</height>
+    <width>900</width>
+    <height>500</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>400</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>testdemo</string>
@@ -325,7 +331,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>805</width>
+     <width>900</width>
      <height>23</height>
     </rect>
    </property>
@@ -349,7 +355,7 @@
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionversion_0_0_1">
    <property name="text">
-    <string>version:0.0.2</string>
+    <string>version:1.0.1</string>
    </property>
   </action>
   <action name="actionError_please_contant_admin">
@@ -358,7 +364,7 @@
    </property>
   </action>
  </widget>
- <layoutdefault spacing="6" margin="11"/>
+ <layoutdefault spacing="6" margin="6"/>
  <tabstops>
   <tabstop>username</tabstop>
   <tabstop>pw</tabstop>

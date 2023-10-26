@@ -46,11 +46,6 @@ public:
     QLineEdit *password;
     QLabel *label_5;
     QLineEdit *repw;
-    QFormLayout *formLayout_2;
-    QLabel *label_6;
-    QLineEdit *grade;
-    QLabel *label_7;
-    QLineEdit *mail;
     QSpacerItem *verticalSpacer_3;
     QPushButton *pushButton;
     QLabel *label;
@@ -61,7 +56,8 @@ public:
     {
         if (RegisterClass->objectName().isEmpty())
             RegisterClass->setObjectName(QString::fromUtf8("RegisterClass"));
-        RegisterClass->resize(710, 418);
+        RegisterClass->resize(600, 300);
+        RegisterClass->setMinimumSize(QSize(400, 222));
         horizontalLayout_2 = new QHBoxLayout(RegisterClass);
         horizontalLayout_2->setSpacing(6);
         horizontalLayout_2->setContentsMargins(11, 11, 11, 11);
@@ -152,32 +148,6 @@ public:
 
         horizontalLayout->addLayout(formLayout);
 
-        formLayout_2 = new QFormLayout();
-        formLayout_2->setSpacing(6);
-        formLayout_2->setObjectName(QString::fromUtf8("formLayout_2"));
-        label_6 = new QLabel(frame);
-        label_6->setObjectName(QString::fromUtf8("label_6"));
-
-        formLayout_2->setWidget(0, QFormLayout::LabelRole, label_6);
-
-        grade = new QLineEdit(frame);
-        grade->setObjectName(QString::fromUtf8("grade"));
-
-        formLayout_2->setWidget(0, QFormLayout::FieldRole, grade);
-
-        label_7 = new QLabel(frame);
-        label_7->setObjectName(QString::fromUtf8("label_7"));
-
-        formLayout_2->setWidget(1, QFormLayout::LabelRole, label_7);
-
-        mail = new QLineEdit(frame);
-        mail->setObjectName(QString::fromUtf8("mail"));
-
-        formLayout_2->setWidget(1, QFormLayout::FieldRole, mail);
-
-
-        horizontalLayout->addLayout(formLayout_2);
-
 
         gridLayout->addLayout(horizontalLayout, 5, 1, 1, 2);
 
@@ -229,8 +199,6 @@ public:
         label_3->setText(QCoreApplication::translate("RegisterClass", "\345\247\223\345\220\215", nullptr));
         label_4->setText(QCoreApplication::translate("RegisterClass", "\345\257\206\347\240\201", nullptr));
         label_5->setText(QCoreApplication::translate("RegisterClass", "\351\207\215\345\244\215\345\257\206\347\240\201", nullptr));
-        label_6->setText(QCoreApplication::translate("RegisterClass", "\350\257\204\345\210\206", nullptr));
-        label_7->setText(QCoreApplication::translate("RegisterClass", "\351\202\256\347\256\261", nullptr));
         pushButton->setText(QCoreApplication::translate("RegisterClass", "\346\263\250\345\206\214", nullptr));
         label->setText(QCoreApplication::translate("RegisterClass", "\346\263\250\345\206\214", nullptr));
     } // retranslateUi
